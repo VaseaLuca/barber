@@ -1,5 +1,10 @@
 .navbar {
   display: flex;
+  height: 120px;
+}
+.navbar-menu  {
+  display: flex;
+  margin: auto 0;
 }
 .navbar-block{
   display: flex;

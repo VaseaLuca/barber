@@ -1,5 +1,6 @@
 import React from 'react'
 
+import home_background from '../assets/home_background.jpg';
 import location_pin from '../assets/location.png';
 
 import './Greetings.css';
@@ -7,7 +8,7 @@ function Gritings() {
   return (
     <div className='greetings'>
       <div className="greetings-background">
-        <img src='' alt=""/>
+        <img src={home_background} alt="home_background"/>
       </div>
       <div className="greetings-hello">
         Bună

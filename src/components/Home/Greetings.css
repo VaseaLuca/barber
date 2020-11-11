@@ -1,4 +1,15 @@
 
+
+
+
+
+
+.greetings-background img {
+display: flex;
+justify-content: center;
+width: 100%;
+height: auto;
+}
 .greetings-button img {
   width: 20px;
 }

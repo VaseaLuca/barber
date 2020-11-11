@@ -5,21 +5,32 @@
   height: 26px;
   cursor: pointer;
 }
-.menu-stick, .menu-stick::before, .menu-stick::after {
+.menu-stick {
+  width: 20px;
+  height: 4px;
+  margin-left: 20px;
+  background-color: #000000;
+}
+.menu-stick::before {
   width: 40px;
+  height: 4px;
+  background-color: #000000;
+}
+.menu-stick::after {
+  width: 20px;
   height: 4px;
   background-color: #000000;
 }
 .menu-stick:before {
   position: absolute;
-  top: 22px;
+  top: 28.5px;
   left: 0;
   content: '';
   margin: 30px 30px;
 }
 .menu-stick:after {
   position: absolute;
-  top: 11px;
+  top: 39px;
   left: 0;
   content: '';
   margin: 30px 30px;
