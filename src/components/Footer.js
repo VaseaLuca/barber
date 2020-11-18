@@ -35,24 +35,6 @@ function Footer () {
           <div className="footer-column-ig">
             <img src={ig} alt="" />
           </div>
-          <div className="footer-column-ig">
-            <img src={ig} alt="" />
-          </div>
-          <div className="footer-column-ig">
-            <img src={ig} alt="" />
-          </div>
-          <div className="footer-column-ig">
-            <img src={ig} alt="" />
-          </div>
-          <div className="footer-column-ig">
-            <img src={ig} alt="" />
-          </div>
-          <div className="footer-column-ig">
-            <img src={ig} alt="" />
-          </div>
-          <div className="footer-column-ig">
-            <img src={ig} alt="" />
-          </div>
         </div>
       </div>
     </div>
