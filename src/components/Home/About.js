@@ -1,5 +1,7 @@
 import React from 'react'
 
+import './About.css';
+
 function About({ title, info, img }) {
   return (
     <div className="about">
@@ -7,7 +9,7 @@ function About({ title, info, img }) {
         <div className="about-text">
           {title}
         </div>
-        <div className="about-text-block">
+        <div className="about-text-description">
           {info}
         </div>
         <div className="about-button">

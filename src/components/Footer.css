@@ -1,0 +1,40 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  background-color: #000000;
+  color: #ffffff;
+  height: 300px;
+}
+.footer-row {
+  margin: auto 20px;
+}
+.footer-column {
+  margin: 0 10px 20px 0;
+  text-align: left;
+  white-space: nowrap;
+}
+.footer-column-holiday {
+  display: flex;
+}
+.footer-column-close {
+  margin: 0 0 0 70px;
+}
+.footer-column-tel {
+  margin: 0 10px 20px 0;
+  text-align: left;
+}
+.footer-column-tel a {
+  text-decoration: none;
+  color: #fff;
+  margin: 0 10px;
+}
+.footer-column-social {
+  display: flex;
+}
+.footer-column-fb img {
+  width: 10px;
+  margin: 0 10px;
+}
+.footer-column-ig img {
+  width: 20px;
+}
