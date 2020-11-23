@@ -3,7 +3,7 @@
   justify-content: center;
   background-color: #000000;
   color: #ffffff;
-  height: 300px;
+  height: 350px;
 }
 .footer-row {
   margin: auto 20px;
@@ -12,6 +12,7 @@
   margin: 0 10px 20px 0;
   text-align: left;
   white-space: nowrap;
+  cursor: pointer;
 }
 .footer-column-holiday {
   display: flex;
