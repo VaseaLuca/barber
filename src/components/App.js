@@ -3,7 +3,7 @@ import Navbar from './Navbar';
 import Home from './Home/Home';
 import Footer from './Footer';
 
-import './App.css';
+import './App.scss';
 
 function App() {
   return (

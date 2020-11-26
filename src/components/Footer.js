@@ -3,7 +3,7 @@ import React from 'react';
 
 import fb from "./assets/facebook_logo_white.png";
 import ig from "./assets/instagram_logo_white.png";
-import './Footer.css';
+import './Footer.scss';
 
 function Footer () {
   return (

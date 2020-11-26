@@ -3,16 +3,17 @@
   justify-content: center;
   background-color: #000000;
   color: #ffffff;
-  height: 350px;
+  height: 450px;
 }
 .footer-row {
-  margin: auto 20px;
+  margin: auto 30px;
 }
 .footer-column {
   margin: 0 10px 20px 0;
   text-align: left;
   white-space: nowrap;
   cursor: pointer;
+  font-size: calc(18px + 0.2px);
 }
 .footer-column-holiday {
   display: flex;

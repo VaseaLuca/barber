@@ -4,7 +4,7 @@ import hair_Mada_1 from "../assets/hair_Mada_1.jpeg";
 import hair_Mada_2 from "../assets/hair_Mada_2.jpeg";
 import hair_Octav_1 from '../assets/hair_Octav_1.jpeg';
 import hair_Octav_2 from '../assets/hair_Octav_2.jpeg';
-import './Service_Price.css';
+import './Service_Price.scss';
 
 function Service_Price() {
   return (

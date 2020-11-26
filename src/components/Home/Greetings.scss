@@ -10,29 +10,29 @@ width: 100%;
 height: auto;
 }
 .greetings-hello{
-margin: 40px auto 30px auto;
+margin: 40px auto 20px auto;
 font-weight: 600;
-font-size: calc(16px + 1.6vw);
+font-size: calc(16px + 1.4vw);
 }
 .greetings-underline-text {
 margin: 0 auto 2px auto;
-font-size: calc(14px + 0.2vw);
+font-size: calc(14px + 0.4vw);
 font-weight: 600;
 text-decoration: underline;
 cursor: pointer
 }
 .greetings-text{
 margin: 0 auto 20px auto;
-font-size: calc(14px + 0.2vw);
+font-size: calc(14px + 0.4vw);
 }
 .greetings-button {
 margin: 0 auto 20px auto;
 border: 3px solid #000000;
 padding: 10px 30px;
-font-size: calc(12px+0.2vw);
+font-size: calc(12px + 0.5vw);
 font-weight: 600;
 cursor: pointer;
 }
 .greetings-button img {
-  width: 15px;
+  width: calc(12px + 0.2vw);
 }

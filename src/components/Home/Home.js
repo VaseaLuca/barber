@@ -7,7 +7,7 @@ import ServicePrice from './Service_Price';
 
 import about_img from "../assets/Octavian&Madalina.jpg";
 import career_img from "../assets/career_photo.jpg";
-import './Home.css';
+import './Home.scss';
 
 function Home() {
   return (
