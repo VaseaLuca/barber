@@ -10,28 +10,24 @@
   height: 4px;
   margin-left: 20px;
   background-color: #000000;
-}
-.menu-stick::before {
-  width: 40px;
-  height: 4px;
-  background-color: #000000;
-}
-.menu-stick::after {
-  width: 20px;
-  height: 4px;
-  background-color: #000000;
-}
-.menu-stick:before {
-  position: absolute;
-  top: 28.5px;
-  left: 0;
-  content: '';
-  margin: 30px 30px;
-}
-.menu-stick:after {
-  position: absolute;
-  top: 39px;
-  left: 0;
-  content: '';
-  margin: 30px 30px;
+  &::before {
+    width: 40px;
+    height: 4px;
+    background-color: #000000;
+    position: absolute;
+    top: 28.5px;
+    left: 0;
+    content: '';
+    margin: 30px 30px;
+  }
+  &::after {
+    width: 20px;
+    height: 4px;
+    background-color: #000000;
+    position: absolute;
+    top: 39px;
+    left: 0;
+    content: '';
+    margin: 30px 30px;
+  }
 }

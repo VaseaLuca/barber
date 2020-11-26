@@ -1,0 +1,27 @@
+@mixin flexColumn {
+  display: flex;
+  flex-direction: column;
+}
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+}
+@mixin homeBtn {
+  border: $btnBorder;
+  padding: $btnPadding;
+  font-size: $btnTextSize;
+  font-weight: $boldText;
+  white-space: nowrap;
+  display: inline-block;
+  cursor: pointer;
+}
+
+// Sass settings for the Home page buttons, header text size, description text size etc ...
+
+$headerTextSize: calc(16px + 1.4vw);
+$descriptionTextSize: calc(14px + 0.4vw);
+$btnTextSize: calc(12px + 0.5vw);
+$btnBorder: 3px solid black;
+$btnPadding: 10px 30px;
+$boldText: 600;
+$thinText: 500;
