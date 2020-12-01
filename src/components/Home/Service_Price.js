@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 import hair_Mada_1 from "../assets/hair_Mada_1.jpeg";
 import hair_Mada_2 from "../assets/hair_Mada_2.jpeg";
@@ -39,7 +40,7 @@ function Service_Price() {
           etc.
         </div>
         <div className="service-stick">|</div>
-        <div className="service-button">Vezi Prețuri</div>
+        <div className="service-button"><Link to='/lista-de-preturi' > Vezi Prețuri </Link></div>
       </div>
     </div>
   );

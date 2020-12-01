@@ -1,41 +1,46 @@
 @import './sassSettings';
 
 .service-price {
-display: flex;
+   display: flex;
 }
 .service-price-img-block{
-@include flexColumn();
-flex-basis: 40%;
-justify-content: center;
+   @include flex(column, center);
+   flex-basis: 40%;
+   justify-content: center;
 }
 .service-price-img {
-@include flexCenter();
-margin: 0 0 0 10px;
+   @include flex(none, center);
+   margin: 0 0 0 10px;
  img {
   width: 300px;
-  min-width: 250px;
+  min-width: 210px;
   max-width: 100%;
   margin: 0 10px 10px 0px;
    }
 }
 .service-price-text-block {
-flex-basis: 60%;
-margin: auto 0;
+  text-align: center;
+  flex-basis: 60%;
+  margin: auto 0;
 }
 .service-price-title {
-font-size: $headerTextSize;
-font-weight: $boldText;
-margin: 20px 30px 0 30px;
+  font-size: $headerTextSize;
+  font-weight: $boldText;
+  margin: 20px 30px 0 30px;
 }
 .service-price-description {
-font-size: $descriptionTextSize;
-font-weight: $thinText;
-margin: 10px 30px 0 30px;
+  font-size: $descriptionTextSize;
+  font-weight: $thinText;
+  margin: 10px 30px 0 30px;
 }
 .service-button {
-@include homeBtn();
-margin: 10px auto;
+  @include homeBtn();
+  margin: 10px auto;
+   a {
+      text-decoration: none;
+      color: inherit;
+   }
 }
 .service-stick {
-font-size: calc(14px + 0.5vw);
+  font-size: calc(14px + 0.5vw);
 }

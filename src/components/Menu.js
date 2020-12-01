@@ -1,12 +1,20 @@
-import React from 'react'
+import React,{ useState } from 'react'
 
 import './Menu.scss';
 
-function Menu() {
+function Menu({ isMenuOpen }) {
+  const [menuIsClicked, setMenuIsClicked] = useState(false);
+
+function triggerMenu() {
+    setMenuIsClicked(!menuIsClicked);
+    isMenuOpen();
+}
+  console.log(menuIsClicked);
+
   return (
-      <div className="menu">
-        <div className="menu-stick"></div>
-      </div>
+    <div className="menu" onClick={triggerMenu}>
+      <div className={`menu-stick ${menuIsClicked && `trigger`}`}></div>
+    </div>
   );
 }
 

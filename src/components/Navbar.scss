@@ -1,21 +1,30 @@
+@import './Home/sassSettings';
 .navbar {
   display: flex;
   height: 120px;
+  z-index: 1;
 }
 .navbar-menu  {
   display: flex;
   margin: auto 0;
 }
 .navbar-block{
-  display: flex;
+ @include flex(none, center);
   align-items: center;
-  justify-content: center;
   margin: 0 auto;
 }
-.navbar-logo img{
-  width: 250px
+
+.navbar-logo {
+  a {
+   text-decoration: none;
+  }
+  img {
+    width: 250px
+  }
 }
-.navbar-logo-addon img {
-  width: 60px;
-  margin-top: 38px;
+.navbar-logo-addon {
+  img {
+    width: 60px;
+    margin-top: 38px;
+  }
 }

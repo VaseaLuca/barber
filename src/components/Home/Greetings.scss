@@ -1,34 +1,38 @@
 @import  './sassSettings';
 
 .greetings {
-margin:0 0 0px 0;
-@include flexColumn();
+  margin:0 0 0px 0;
+  @include flex(column, none);
 }
 .greetings-background img {
-@include flexCenter();
-width: 100%;
-height: auto;
+  @include flex(none, center);
+  width: 100%;
+  height: auto;
 }
 .greetings-hello{
-margin: 40px auto 20px auto;
-font-weight: $boldText;
-font-size: $headerTextSize
+  margin: 40px auto 20px auto;
+  font-weight: $boldText;
+  font-size: $headerTextSize
 }
 .greetings-underline-text {
-margin: 0 auto 2px auto;
-font-size: $descriptionTextSize;
-font-weight: $boldText;
-text-decoration: underline;
-cursor: pointer;
+  margin: 0 auto 2px auto;
+  font-size: $descriptionTextSize;
+  font-weight: $boldText;
+  text-decoration: underline;
+  cursor: pointer;
 }
 .greetings-text{
-margin: 0 auto 20px auto;
-font-size: $descriptionTextSize;
+  margin: 0 auto 20px auto;
+  font-size: $descriptionTextSize;
 }
 .greetings-button {
-margin: 0 auto 20px auto;
-@include homeBtn();
+  @include homeBtn();
+  margin: 0 auto 20px auto;
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
   img {
-  width: calc(12px + 0.2vw);
+    width: calc(12px + 0.2vw);
   }
 }

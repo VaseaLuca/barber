@@ -1,27 +1,32 @@
 @import './sassSettings';
 
 .about {
-margin: 100px auto 100px auto;
-display: flex;
+  margin: 100px auto 100px auto;
+  display: flex;
 }
 .about-text-block {
-@include flexColumn;
-flex-basis: 50%;
-margin: auto 0;
+  @include flex(column, none);
+  flex-basis: 50%;
+  margin: auto 0;
+  text-align: center;
 }
 .about-text{
-font-size: $headerTextSize;
-font-weight: $boldText;
-margin: 30px auto 20px auto;
+  font-size: $headerTextSize;
+  font-weight: $boldText;
+  margin: 30px auto 20px auto;
 }
 .about-text-description {
-font-size: $descriptionTextSize;
-font-weight: $thinText;
-margin: 10px auto 30px auto;
+  font-size: $descriptionTextSize;
+  font-weight: $thinText;
+  margin: 10px auto 30px auto;
 }
 .about-button {
-margin: 0 auto;
-@include homeBtn();
+  margin: 0 auto;
+  @include homeBtn();
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
 }
 .about-img img {
   width: 1300px;

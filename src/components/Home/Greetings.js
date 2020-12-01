@@ -1,10 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 import home_background from '../assets/home_background.jpg';
 import location_pin from '../assets/location.png';
+import location_pin_white from "../assets/location_white.png";
 
 import './Greetings.scss';
+
 function Gritings() {
+
+  const [isHovered, setIsHovered]= useState(false);
+
   return (
     <div className="greetings">
       <div className="greetings-background">
@@ -18,9 +24,11 @@ function Gritings() {
           Vezi ce spun oamenii despre noi și programează o vizită. Găsește
           salonul pe hartă
         </div>
-      <div className="greetings-button">
+      <div className="greetings-button" onMouseEnter={()=> setIsHovered(true)} onMouseLeave={()=> setIsHovered(false)}>
+        <Link to='/maps'>
         Vezi
-        <img src={location_pin} alt="" />
+        { isHovered? <img src={location_pin_white} alt="" /> : <img src={location_pin} alt="" /> }
+        </Link>
       </div>
     </div>
   );

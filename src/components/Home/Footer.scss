@@ -1,6 +1,7 @@
+@import './sassSettings';
+
 .footer {
-  display: flex;
-  justify-content: center;
+@include flex(none, center);
   background-color: black;
   color: #fff;
   height: 450px;
@@ -13,6 +14,20 @@
   text-align: left;
   white-space: nowrap;
   cursor: pointer;
+  font-size: calc(18px + 0.2px);
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  &:hover {
+    color: rgb(158, 158, 158);
+    transition: 0.2ms ease-in-out;
+  }
+}
+.footer-column-none {
+  margin: 0 10px 20px 0;
+  text-align: left;
+  white-space: nowrap;
   font-size: calc(18px + 0.2px);
 }
 .footer-column-holiday {
@@ -36,7 +51,17 @@
 .footer-column-fb img {
   width: 10px;
   margin: 0 10px;
+  cursor: pointer;
+  &:hover{
+    transform: scale(1.4);
+    transition: 0.1s ease-in-out;
+  }
 }
 .footer-column-ig img {
   width: 20px;
+  cursor: pointer;
+  &:hover{
+    transform: scale(1.4);
+    transition: 0.1s ease-in-out;
+  }
 }
