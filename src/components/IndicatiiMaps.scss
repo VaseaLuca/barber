@@ -1,0 +1,81 @@
+@import './Home/sassSettings';
+
+.maps {
+  margin: 100px 0 0 0;
+  @include flex(column, none);
+}
+.maps-first-block {
+  @include flex(row, center);
+  margin: 0 10px;
+  @include mediaMobilesTablets() {
+    @include flex(column-reverse, center);
+  }
+  @include mediaSmartphones() {
+    @include flex(column-reverse, center);
+  }
+  @include mediaSmallSmartphones() {
+    @include flex(column-reverse, center);
+  }
+}
+.maps-block {
+  flex-basis: 40%;
+  white-space: nowrap;
+  margin: auto 10px auto 10px;
+  text-align: center;
+  @include mediaMobilesTablets() {
+    margin: 40px 0 0 0;
+  }
+  @include mediaSmartphones() {
+    margin: 40px 0 0 0;
+  }
+  @include mediaSmallSmartphones() {
+    margin: 40px 0 0 0;
+  }
+  .maps-name {
+    font-size: $headerTextSize;
+    font-weight: 600;
+    margin: 0 10px 20px 10px;
+  }
+  .maps-text {
+    font-size: $descriptionTextSize;
+    margin: 0 10px 25px 10px;
+  }
+  .maps-button {
+    @include homeBtn();
+    margin: 0 20px;
+    img {
+    width: calc(12px + 0.2vw);
+   }
+  }
+}
+.maps-google {
+  @include flexCenter();
+  flex-basis: 55%;
+  iframe {
+    width: 750px;
+    max-width: 100%;
+    min-width: 250px;
+  @include mediaSmallSmartphones() {
+    height: 350px;
+   }
+  }
+}
+.maps-second-block {
+  margin: 150px 20px 200px 20px;
+  text-align: center;
+  @include mediaSmallSmartphones() {
+    margin: 120px 20px 150px 20px;
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+.maps-call-text {
+  margin: 0 10px 25px 10px;
+  font-size: calc(14px + 0.6vw);
+  font-weight: 600;
+}
+.maps-call-button {
+  @include homeBtn();
+}

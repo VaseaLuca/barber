@@ -5,16 +5,41 @@
   background-color: black;
   color: #fff;
   height: 450px;
+  @include mediaMobilesTablets() {
+    @include flexColumn();
+    height: 750px;
+  }
+  @include mediaSmartphones() {
+    @include flexColumn();
+    height: 750px;
+  }
+  @include mediaSmallSmartphones(){
+    @include flexColumn();
+    height: 750px;
+  }
 }
 .footer-row {
   margin: auto 30px;
+
+  @include mediaTabletsIpads() {
+    margin: auto 16px;
+  }
+  @include mediaMobilesTablets() {
+      margin: 30px 150px;
+  }
+  @include mediaSmartphones() {
+    margin: 30px 60px;
+  }
+  @include mediaSmallSmartphones(){
+    margin: 30px;
+  }
 }
 .footer-column {
   margin: 0 10px 20px 0;
   text-align: left;
   white-space: nowrap;
   cursor: pointer;
-  font-size: calc(18px + 0.2px);
+  font-size: calc(15px + 0.2vw);
   a {
     text-decoration: none;
     color: inherit;
@@ -28,7 +53,7 @@
   margin: 0 10px 20px 0;
   text-align: left;
   white-space: nowrap;
-  font-size: calc(18px + 0.2px);
+  font-size: calc(15px + 0.2vw);
 }
 .footer-column-holiday {
   display: flex;
@@ -39,6 +64,7 @@
 .footer-column-tel {
   margin: 0 10px 20px 0;
   text-align: left;
+  font-size: calc(15px + 0.2vw);
   a{
     text-decoration: none;
     color: #fff;
@@ -47,6 +73,13 @@
 }
 .footer-column-social {
   display: flex;
+  font-size: calc(15px + 0.2vw);
+  @include mediaSmartphones() {
+    margin-bottom: 50px;
+  }
+  @include mediaSmallSmartphones() {
+    margin-bottom: 50px;
+  }
 }
 .footer-column-fb img {
   width: 10px;

@@ -40,7 +40,9 @@ function Service_Price() {
           etc.
         </div>
         <div className="service-stick">|</div>
-        <div className="service-button"><Link to='/lista-de-preturi' > Vezi Prețuri </Link></div>
+        <Link to="/lista-de-preturi">
+          <div className="service-button">Vezi Prețuri</div>
+        </Link>
       </div>
     </div>
   );

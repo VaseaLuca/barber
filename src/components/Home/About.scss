@@ -3,12 +3,22 @@
 .about {
   margin: 100px auto 100px auto;
   display: flex;
+  @include mediaSmartphones() {
+    flex-direction: column-reverse;
+  }
+  @include mediaSmallSmartphones() {
+    flex-direction: column-reverse;
+  }
 }
 .about-text-block {
   @include flex(column, none);
   flex-basis: 50%;
-  margin: auto 0;
+  margin: auto 10px;
   text-align: center;
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
 }
 .about-text{
   font-size: $headerTextSize;
@@ -23,14 +33,10 @@
 .about-button {
   margin: 0 auto;
   @include homeBtn();
-  a {
-    text-decoration: none;
-    color: inherit;
-  }
 }
 .about-img img {
   width: 1300px;
-  min-width: 360px;
+  min-width: 270px;
   max-width: 100%;
   transition: 0.2s ease-in-out;
 }

@@ -35,3 +35,43 @@ $btnBorder: 3px solid black;
 $btnPadding: 10px 30px;
 $boldText: 600;
 $thinText: 500;
+
+// Media Queries 
+
+@mixin mediaDesktop {
+  @media (min-width: 1281px) {
+    @content;
+  }
+}
+@mixin mediaLaptops {
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    @content;
+  }
+}
+@mixin mediaTabletsIpads {
+  @media (min-width: 768px) and (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin mediaTabletsIpadsLandscape {
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    @content;
+  }
+}
+
+@mixin mediaMobilesTablets {
+  @media (min-width: 481px) and (max-width: 767px) {
+    @content;
+  }
+}
+@mixin mediaSmartphones {
+  @media (min-width: 320px) and (max-width: 480px) {
+    @content;
+  }
+}
+@mixin mediaSmallSmartphones {
+  @media (min-width: 280px) and (max-width: 319px) {
+    @content;
+  }
+}

@@ -3,6 +3,11 @@
 .greetings {
   margin:0 0 0px 0;
   @include flex(column, none);
+  a {
+    text-decoration: none;
+    color: inherit;
+    text-align: center;
+  }
 }
 .greetings-background img {
   @include flex(none, center);
@@ -22,17 +27,33 @@
   cursor: pointer;
 }
 .greetings-text{
-  margin: 0 auto 20px auto;
+  margin: 0 10px 20px 10px;
+  text-align: center;
   font-size: $descriptionTextSize;
+}
+.button-section {
+  @include flex(row, center);
+  @include mediaSmartphones() {
+    flex-direction: column-reverse;
+  }
+  @include mediaSmallSmartphones() {
+    flex-direction: column-reverse;
+  }
+  transition: 0.2s ease-in-out;
 }
 .greetings-button {
   @include homeBtn();
   margin: 0 auto 20px auto;
-  a {
-    text-decoration: none;
-    color: inherit;
-  }
   img {
     width: calc(12px + 0.2vw);
+  }
+}
+.greetings-button-red {
+  @include homeBtn();
+  margin: 0 auto 20px 10px;
+  border-color: #f60000;
+  color: #f60000;
+  &:hover{
+    background-color: #f60000;
   }
 }

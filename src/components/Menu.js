@@ -9,12 +9,11 @@ function triggerMenu() {
     setMenuIsClicked(!menuIsClicked);
     isMenuOpen();
 }
-  console.log(menuIsClicked);
 
   return (
-    <div className="menu" onClick={triggerMenu}>
-      <div className={`menu-stick ${menuIsClicked && `trigger`}`}></div>
-    </div>
+      <div className="menu" onClick={triggerMenu}>
+        <div className={`menu-stick ${menuIsClicked && `trigger`}`}></div>
+      </div>
   );
 }
 

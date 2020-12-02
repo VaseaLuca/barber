@@ -16,8 +16,6 @@ function App() {
 
 const [isMenuOpen, setMenuIsOpen]= useState(false);
 
-console.log(isMenuOpen);
-
   return (
     <div className="App">
       <Navbar isMenuOpen={()=> {setMenuIsOpen(!isMenuOpen)}} />

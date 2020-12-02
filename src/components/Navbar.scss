@@ -3,15 +3,27 @@
   display: flex;
   height: 120px;
   z-index: 1;
+  @include mediaSmartphones {
+    height: 120px;
+  }
+  @include mediaSmallSmartphones {
+    height: 100px;
+  }
 }
 .navbar-menu  {
   display: flex;
-  margin: auto 0;
+  margin: auto 0 auto 22px;
 }
 .navbar-block{
  @include flex(none, center);
   align-items: center;
   margin: 0 auto;
+  @include mediaSmartphones {
+    margin: 0 0 0 90px
+  }
+  @include mediaSmallSmartphones {
+    margin: 0 0 0 82px
+  }
 }
 
 .navbar-logo {
@@ -19,12 +31,28 @@
    text-decoration: none;
   }
   img {
-    width: 250px
+    @include mediaSmartphones {
+      width: 170px;
+    }
+    @include mediaSmallSmartphones {
+      width: 150px;
+    }
+    width: 250px;
+    max-width: 100%;
+    min-width: 100px;
   }
 }
 .navbar-logo-addon {
   img {
+    @include mediaSmartphones {
+      width: 38px;
+      margin-top: 27px;
+    }
+    @include mediaSmallSmartphones {
+      width: 30px;
+      margin-top: 25px;
+    }
     width: 60px;
-    margin-top: 38px;
+    margin-top: 36px;
   }
 }

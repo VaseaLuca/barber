@@ -2,18 +2,30 @@
 
 .service-price {
    display: flex;
+  @include mediaSmartphones() {
+    flex-direction: column;
+  }
+  @include mediaSmallSmartphones() {
+    flex-direction: column;
+  }
 }
 .service-price-img-block{
    @include flex(column, center);
    flex-basis: 40%;
-   justify-content: center;
+  @include mediaSmartphones() {
+    margin-bottom: 40px;
+  }
+  @include mediaSmallSmartphones() {
+    margin-bottom: 30px;
+  }
+  transition: 0.2s ease-in-out;
 }
 .service-price-img {
    @include flex(none, center);
    margin: 0 0 0 10px;
  img {
   width: 300px;
-  min-width: 210px;
+  min-width: 110px;
   max-width: 100%;
   margin: 0 10px 10px 0px;
    }
@@ -22,6 +34,10 @@
   text-align: center;
   flex-basis: 60%;
   margin: auto 0;
+   a {
+     text-decoration: none;
+     color: inherit;
+   }
 }
 .service-price-title {
   font-size: $headerTextSize;
@@ -36,10 +52,6 @@
 .service-button {
   @include homeBtn();
   margin: 10px auto;
-   a {
-      text-decoration: none;
-      color: inherit;
-   }
 }
 .service-stick {
   font-size: calc(14px + 0.5vw);
