@@ -14,14 +14,24 @@
 }
 .nav-modal-menu {
   padding: 150px 0;
+  ul {
+    padding: 0;
+  }
   li {
     list-style: none;
-    font-size: $headerTextSize;
+    font-size: calc(16px + 1.4vw);
+    white-space: normal;
     font-weight: 600;
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 10px;
     cursor: pointer;
+    @include mediaSmartphones {
+      font-size: calc(16px + 1.3vw);
+    }
+    @include mediaSmallSmartphones {
+      font-size: calc(12px + 1.3vw);
+    }
   a {
     text-decoration: none;
     color: inherit;

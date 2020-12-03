@@ -3,6 +3,10 @@
 .about {
   margin: 100px auto 100px auto;
   display: flex;
+  transition: 0.2s ease-in-out;
+  @include mediaMobilesTablets() {
+    flex-direction: column-reverse;
+  }
   @include mediaSmartphones() {
     flex-direction: column-reverse;
   }
@@ -34,9 +38,11 @@
   margin: 0 auto;
   @include homeBtn();
 }
-.about-img img {
-  width: 1300px;
-  min-width: 270px;
-  max-width: 100%;
-  transition: 0.2s ease-in-out;
+.about-img {
+  img {
+    width: 1300px;
+    min-width: 270px;
+    max-width: 100%;
+    transition: 0.2s ease-in-out;
+  }
 }

@@ -1,0 +1,57 @@
+@import './Home/sassSettings';
+
+.description {
+  @include flexColumn();
+  margin: 100px 0 0 0;
+}
+
+.description-text {
+  display: flex;
+  margin: 0 auto 100px auto;
+  font-size: $headerTextSize;
+  font-weight: 600;
+}
+
+.description-block-one {
+  @include flex(row, none);
+}
+
+.block-one-header {
+  text-align: center;
+  font-size: $headerTextSize;
+}
+.redirect-block {
+  margin: 0px 10px 250px 10px;
+  text-align: center;
+}
+.redirect-header {
+  font-size: $headerTextSize;
+  font-weight: 600;
+  margin: 0 auto 20px auto;
+}
+.redirect-content {
+  font-size: calc(16px + 1vw);
+  margin: 0 auto 20px auto;
+}
+.redirect-button-block {
+  a {
+  text-decoration: none;
+  color:inherit;
+  }
+}
+.redirect-button {
+  @include homeBtn;
+  margin: 0 5px 20px 5px;
+}
+.redirect-button-red {
+  @include homeBtn;
+  margin: 0 5px 20px 5px;
+  border-color: #f60000;
+  color: #f60000;
+  &:hover {
+    background-color: #f60000;
+  }
+}
+.redirect-description {
+  font-size: calc(14px + 1vw);
+}

@@ -1,14 +1,16 @@
 import React from 'react'
 
-function AboutCard({ header }) {
+import './AboutCard.scss';
+
+function AboutCard({ header, description, img, isReversed }) {
   return (
-    <div className="about-card">
-      <div className='about-card-description-block'>
-        <div className="about-card-header"> {header} </div>
-        <div className="about-card-description"></div>
+    <div className={`about-card ${isReversed && `reverse`}`}>
+      <div className="description-text-block">
+        <div className="description-header"> {header} </div>
+        <div className="about-description">{description}</div>
       </div>
-      <div className='about-card-photo'>
-        <img src="" alt=""/>
+      <div className="description-img">
+        <img src={img} alt="" />
       </div>
     </div>
   );

@@ -1,0 +1,67 @@
+@import './Home/sassSettings';
+
+.about-card {
+  display: flex;
+  margin: 0 auto 200px auto;
+  @include mediaMobilesTablets {
+    flex-direction: column;
+    margin: 0 auto 100px auto;
+  }
+  @include mediaSmartphones {
+    flex-direction: column;
+    margin: 0 auto 100px auto;
+  }
+  @include mediaSmallSmartphones {
+    flex-direction: column;
+    margin: 0 auto 100px auto;
+  }
+}
+.about-card.reverse {
+  display: flex;
+  flex-direction: row-reverse;
+  @include mediaMobilesTablets {
+    flex-direction: column;
+    margin: 0 auto 200px auto;
+  }
+  @include mediaSmartphones {
+    flex-direction: column;
+    margin: 0 auto 200px auto;
+  }
+  @include mediaSmallSmartphones {
+    flex-direction: column;
+    margin: 0 auto 200px auto;
+  }
+}
+.description-text-block {
+  margin: auto 10px;
+  flex-basis: 50%;
+}
+.description-header {
+  text-align: center;
+  font-size: $headerTextSize;
+  font-weight: 600;
+  margin: 0 10px 20px 10px;
+}
+.about-description {
+  text-align: center;
+  font-size: $descriptionTextSize;
+  @include mediaMobilesTablets {
+    margin: 0 10px 20px 10px;
+  }
+  @include mediaSmartphones {
+    margin: 0 10px 20px 10px;
+  }
+  @include mediaSmallSmartphones {
+    margin: 0 10px 20px 10px;
+  }
+}
+.description-img {
+  flex-basis: 60%;
+  margin: auto;
+  img {
+    width: 1300px;
+    min-width: 270px;
+    max-width: 100%;
+    transition: 0.2s ease-in-out;
+  }
+}
