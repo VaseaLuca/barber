@@ -13,11 +13,11 @@ function Service_Price() {
       <div className="service-price-img-block">
         <div className="service-price-img">
           <img src={hair_Mada_1} alt="" />
-          <img src={hair_Octav_1} alt="" />
+          <img src={hair_Mada_2} alt="" />
         </div>
         <div className="service-price-img">
           <img src={hair_Octav_2} alt="" />
-          <img src={hair_Mada_2} alt="" />
+          <img src={hair_Octav_1} alt="" />
         </div>
       </div>
       <div className="service-price-text-block">

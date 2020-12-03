@@ -25,7 +25,10 @@
 }
 .service-price-img {
    @include flex(none, center);
-   margin: 0 0 0 10px;
+  align-items: flex-start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  margin: 0 0 0 10px;
  img {
   width: 300px;
   min-width: 110px;
