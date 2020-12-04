@@ -46,13 +46,13 @@
   img {
     @include mediaSmartphones {
       width: 38px;
-      margin-top: 27px;
+      margin-top: 29px;
     }
     @include mediaSmallSmartphones {
       width: 30px;
-      margin-top: 25px;
+      margin-top: 28px;
     }
     width: 60px;
-    margin-top: 36px;
+    margin-top: 42px;
   }
 }

@@ -1,19 +1,12 @@
-import React,{ useState } from 'react'
+import React from 'react';
 
 import './Menu.scss';
 
-function Menu({ isMenuOpen }) {
-  const [menuIsClicked, setMenuIsClicked] = useState(false);
-
-function triggerMenu() {
-    setMenuIsClicked(!menuIsClicked);
-    isMenuOpen();
-}
-
+function Menu({ openDrawer, isDrawerOpen }) {
   return (
-      <div className="menu" onClick={triggerMenu}>
-        <div className={`menu-stick ${menuIsClicked && `trigger`}`}></div>
-      </div>
+    <div className="menu" onClick={openDrawer}>
+      <div className={`menu-stick ${isDrawerOpen && `trigger`}`}></div>
+    </div>
   );
 }
 

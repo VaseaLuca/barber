@@ -1,8 +1,9 @@
 import React,{ useState } from 'react';
 import { Route } from 'react-router-dom';
 
+import Backdrop from './Backdrop';
 import Navbar from './Navbar';
-import NavModal from './NavModal';
+import Drawer from './Drawer';
 import Home from './Home/Home';
 import IndicatiiMaps from './IndicatiiMaps';
 import About from './About';
@@ -14,14 +15,14 @@ import './App.scss';
 
 function App() {
 
-const [isMenuOpen, setMenuIsOpen]= useState(false);
+const [drawerOpen, setDrawerOpen]= useState(false);
+
 
   return (
     <div className="App">
-      <Navbar isMenuOpen={()=> {setMenuIsOpen(!isMenuOpen)}} />
-        <div className='app-modal'>
-          { isMenuOpen && <NavModal onClick={isMenuOpen} /> }
-        </div>
+      <Backdrop open={drawerOpen} close={()=> setDrawerOpen(!drawerOpen)} />
+      <Navbar isDrawerOpen={drawerOpen} openDrawer={()=> setDrawerOpen(!drawerOpen)} />
+      <Drawer drawerIsOpen={drawerOpen} close={()=> setDrawerOpen(!drawerOpen)} />
       <Route path='/' exact component={Home} />
       <Route path='/maps' exact component={IndicatiiMaps} />
       <Route path='/despre' exact component={About} />

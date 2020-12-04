@@ -7,11 +7,11 @@ import Menu from './Menu';
 import './Navbar.scss';
 
 
-function Navbar({ isMenuOpen }) {
+function Navbar({ isDrawerOpen,openDrawer }) {
   return (
     <div className="navbar">
       <div className="navbar-menu">
-        <Menu isMenuOpen={isMenuOpen} />
+        <Menu openDrawer={openDrawer} isDrawerOpen={isDrawerOpen} />
       </div>
       <div className="navbar-block">
         <div className="navbar-logo">
