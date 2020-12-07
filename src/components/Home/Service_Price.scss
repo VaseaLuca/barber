@@ -2,6 +2,7 @@
 
 .service-price {
    display: flex;
+
   @include mediaMobilesTablets() {
     flex-direction: column;
   }

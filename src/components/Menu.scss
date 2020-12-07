@@ -1,18 +1,16 @@
 @import './Home/sassSettings';
 
 .menu {
-  position: absolute;
-  top: 4%;
-  left: 5%;
-  display: block;
+  display: inline-block;
+  position: relative;
   cursor: pointer;
   width: 50px;
   height: 35px;
+  transform: translate(55%, 0%);
 }
-
 .menu-stick {
   position: absolute;
-  right: 1%;
+  right: -1%;
   width: 25px;
   height: 5px;
   background-color: black;

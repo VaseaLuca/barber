@@ -1,8 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 
-import logo from './assets/new_Logo.png';
-import logo_addon from './assets/logo_addon.png';
+import logo_white from "./assets/Golden_Times_test.png";
 import Menu from './Menu';
 import './Navbar.scss';
 
@@ -13,14 +12,9 @@ function Navbar({ isDrawerOpen,openDrawer }) {
       <div className="navbar-menu">
         <Menu openDrawer={openDrawer} isDrawerOpen={isDrawerOpen} />
       </div>
-      <div className="navbar-block">
         <div className="navbar-logo">
-         <Link to='/' > <img src={logo} alt="" /> </Link>
+         <Link to='/' > <img src={logo_white} alt="" /> </Link>
         </div>
-        <div className="navbar-logo-addon">
-          <img src={logo_addon} alt="" />
-        </div>
-      </div>
     </div>
   );
 }

@@ -2,7 +2,12 @@
 
 .about-card {
   display: flex;
+  flex-direction: row;
   margin: 0 auto 200px auto;
+  @include mediaTabletsIpads {
+    flex-direction: column;
+    margin: 0 auto 100px auto;
+  }
   @include mediaMobilesTablets {
     flex-direction: column;
     margin: 0 auto 100px auto;
@@ -19,6 +24,10 @@
 .about-card.reverse {
   display: flex;
   flex-direction: row-reverse;
+  @include mediaTabletsIpads {
+    flex-direction: column;
+    margin: 0 auto 200px auto;
+  }
   @include mediaMobilesTablets {
     flex-direction: column;
     margin: 0 auto 200px auto;
@@ -33,7 +42,7 @@
   }
 }
 .description-text-block {
-  margin: auto 10px;
+  margin: auto 30px;
   flex-basis: 50%;
 }
 .description-header {
@@ -45,6 +54,9 @@
 .about-description {
   text-align: center;
   font-size: $descriptionTextSize;
+  @include mediaTabletsIpads {
+    margin: 0 30px 30px 30px;
+  }
   @include mediaMobilesTablets {
     margin: 0 10px 20px 10px;
   }
@@ -58,8 +70,8 @@
 .description-img {
   flex-basis: 60%;
   margin: auto;
+  text-align: center;
   img {
-    width: 1300px;
     min-width: 270px;
     max-width: 100%;
     transition: 0.2s ease-in-out;

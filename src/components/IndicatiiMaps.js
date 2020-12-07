@@ -14,18 +14,20 @@ const [isHovered, setIsHovered] = useState(false);
         <div className="maps-block">
           <div className="maps-name">Adresa noastră</div>
           <div className="maps-text">Profesor Emil Honoriu nr. 22C, Iași</div>
-          <div
-            className="maps-button"
-            onMouseEnter={() => setIsHovered(true)}
-            onMouseLeave={() => setIsHovered(false)}
-          >
-            INDICAȚII MAPS
-            {isHovered ? (
-              <img src={location_pin_white} alt="" />
-            ) : (
-              <img src={location_pin} alt="" />
-            )}
-          </div>
+          <a href="https://www.google.com/maps/place/Golden+Times+Salon+de+%C3%8Enfrumuse%C8%9Bare/@47.1329472,27.5655852,16.98z/data=!4m5!3m4!1s0x40cafba6e074d399:0xc5b8cd7f2c7578fa!8m2!3d47.1329495!4d27.5678043">
+            <div
+              className="maps-button"
+              onMouseEnter={() => setIsHovered(true)}
+              onMouseLeave={() => setIsHovered(false)}
+            >
+              INDICAȚII MAPS
+              {isHovered ? (
+                <img src={location_pin_white} alt="" />
+              ) : (
+                <img src={location_pin} alt="" />
+              )}
+            </div>
+          </a>
         </div>
         <div className="maps-google">
           <iframe
@@ -42,7 +44,7 @@ const [isHovered, setIsHovered] = useState(false);
       </div>
       <div className="maps-second-block">
         <div className="maps-call-text">
-          Suntem la dispoziția dumneavoastră pentru consultare/programaere
+          Suntem la dispoziția dumneavoastră pentru consultare/programare
         </div>
         <a href="tel:0787222302">
           <div className="maps-call-button">SUNĂ</div>
