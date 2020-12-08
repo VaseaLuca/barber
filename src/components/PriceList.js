@@ -1,11 +1,273 @@
 import React from 'react'
 
+import Footer from './Home/Footer';
+import './PriceList.scss';
+
 function PriceList() {
+  const pricesFrizerie = [
+    {
+      name: "Tuns Clasic",
+      time: "30 Min",
+      price: "40 RON",
+    },
+    {
+      name: "Tuns Fade",
+      time: "45 Min",
+      price: "50 RON",
+    },
+    {
+      name: "Tuns Păr Lung",
+      time: "45 Min",
+      price: "50 RON",
+    },
+    {
+      name: "Contur",
+      time: "10 Min",
+      price: "15 RON",
+    },
+    {
+      name: "Spălat",
+      time: "5 Min",
+      price: "10 RON",
+    },
+    {
+      name: "Barbă",
+      time: "15 Min",
+      price: "20 RON",
+    },
+    {
+      name: "Mustață",
+      time: "5 Min",
+      price: "5 RON",
+    },
+  ];
+  const pricesCoafor = [
+    {
+      name: "Tuns Păr Scurt",
+      time: "45 Min",
+      price: "40 RON",
+    },
+    {
+      name: "Tuns Păr Lung",
+      time: "60 Min",
+      price: "50 RON",
+    },
+    {
+      name: "Tuns - Schimbare Formă",
+      time: "60 Min",
+      price: "60 RON",
+    },
+    {
+      name: "Spălat",
+      time: "10 Min",
+      price: "20 RON",
+    },
+    {
+      name: "Coafat Drept",
+      time: "30 Min",
+      price: "40 RON",
+    },
+    {
+      name: "Coafat Bucle",
+      time: "40 Min",
+      price: "60 RON",
+    },
+    {
+      name: "Coafat - Păr Scurt",
+      time: "20 Min",
+      price: "40 RON",
+    },
+    {
+      name: "Coafat Ocazie",
+      time: "90 Min",
+      price: "150-250 RON",
+    },
+    {
+      name: "Coafat - Mireasă",
+      time: "90 Min",
+      price: "250-500 RON",
+    },
+    {
+      name: "Vopsit Rădăcină",
+      time: "30 Min",
+      price: "40 RON",
+    },
+    {
+      name: "Vopsit Total",
+      time: "40 Min",
+      price: "60 RON",
+    },
+    {
+      name: "Vopsit Suvițe",
+      time: "60 Min",
+      price: "100 RON",
+    },
+    {
+      name: "Decapaj",
+      time: "60 Min",
+      price: "100 RON",
+    },
+    {
+      name: "Coafat Extensii",
+      time: "60 Min",
+      price: "110 RON",
+    },
+    {
+      name: "Montat Extensii",
+      time: "120 Min",
+      price: "7 RON/mesa",
+    },
+    {
+      name: "Montat Extensii Bandă",
+      time: "90 Min",
+      price: "150 RON",
+    },
+    {
+      name: "Permanent",
+      time: "60 Min",
+      price: "100 RON",
+    },
+    {
+      name: "Vopsea/pudra/sol.Permanent",
+      time: "",
+      price: "12 RON/10 Gr",
+    },
+  ];
+  const pricesCosmetica = [
+    {
+      name: "Pensat",
+      time: "15 Min",
+      price: "20 RON",
+    },
+    {
+      name: "Vopsit Sprancene",
+      time: "15 Min",
+      price: "15 RON",
+    },
+    {
+      name: "Epilat picioare lung",
+      time: "20 Min",
+      price: "50 RON",
+    },
+    {
+      name: "Epilat picioare scurt",
+      time: "10 Min",
+      price: "20 RON",
+    },
+    {
+      name: "Epilat brațe lung",
+      time: "20 Min",
+      price: "40 RON",
+    },
+    {
+      name: "Epilat brațe scurt",
+      time: "10 Min",
+      price: "20 RON",
+    },
+    {
+      name: "Epilat axila",
+      time: "10 Min",
+      price: "20 RON",
+    },
+    {
+      name: "Epilat inghinal total",
+      time: "30 Min",
+      price: "45 RON",
+    },
+    {
+      name: "Epilat inghinal parțial",
+      time: "15 Min",
+      price: "20 RON",
+    },
+    {
+      name: "Epilat iterfesier",
+      time: "10 Min",
+      price: "20 RON",
+    },
+    {
+      name: "Epilat bărbie",
+      time: "5 Min",
+      price: "10 RON",
+    },
+    {
+      name: "Epilat pomeți",
+      time: " Min",
+      price: " RON",
+    },
+    {
+      name: "Epilat abdomen",
+      time: "15 Min",
+      price: "20 RON",
+    },
+    {
+      name: "Epilat mustață",
+      time: "5 Min",
+      price: "15 RON",
+    },
+    {
+      name: "Machiaj de zi",
+      time: "60 Min",
+      price: "120 RON",
+    },
+    {
+      name: "Machiaj de seara",
+      time: "90 Min",
+      price: "160 RON",
+    },
+    {
+      name: "Machiaj de seara cu gene",
+      time: "80 Min",
+      price: "180 RON",
+    },
+    {
+      name: "Machiaj mireasa",
+      time: "120 Min",
+      price: "250 RON",
+    },
+  ];
+
+  console.log("Frizerie", pricesFrizerie);
   return (
-    <div>
-      PriceList
+    <div className="price-list">
+      <div className="price-name">Frizerie</div>
+      <table>
+        <tbody>
+          {pricesFrizerie.map((price, index) => (
+            <tr key={index}>
+              <td>{price.name}</td>
+              <td>{price.time}</td>
+              <td>{price.price}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+      <div className="price-name">Coafor</div>
+      <table>
+        <tbody>
+          {pricesCoafor.map((price, index) => (
+            <tr key={index}>
+              <td>{price.name}</td>
+              <td>{price.time}</td>
+              <td>{price.price}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+      <div className="price-name">Cosmetică</div>
+      <table>
+        <tbody>
+          {pricesCosmetica.map((price, index) => (
+            <tr key={index}>
+              <td>{price.name}</td>
+              <td>{price.time}</td>
+              <td>{price.price}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+      <Footer />
     </div>
-  )
+  );
 }
 
 export default PriceList;

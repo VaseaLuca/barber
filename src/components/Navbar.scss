@@ -6,6 +6,7 @@
 .navbar-menu  {
   display: flex;
   margin: auto 0;
+
 }
 .navbar-logo {
   @include flex(none, center);

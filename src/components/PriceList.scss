@@ -1,0 +1,25 @@
+@import './Home/sassSettings';
+
+.price-list {
+  margin: 100px 0 0 0;
+  @include flexColumn;
+
+  .price-name {
+    margin: 0 0 40px 0;
+    text-align: center;
+    font-size: $headerTextSize;
+  }
+
+  table {
+    margin: 0 0 200px 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  td {
+    width: 25%;
+    font-size: $descriptionTextSize;
+    padding: 10px 0;
+    word-break: break-word;
+  }
+}
