@@ -1,8 +1,8 @@
 @import './Home/sassSettings';
 
 .maps {
-  margin: 100px 0 0 0;
   @include flex(column, none);
+  padding-top: 150px;
 }
 .maps-first-block {
   @include flex(row, center);
@@ -65,7 +65,7 @@
   }
 }
 .maps-second-block {
-  margin: 150px 20px 200px 20px;
+  margin: 150px 20px 250px 20px;
   text-align: center;
   @include mediaSmallSmartphones() {
     margin: 120px 20px 150px 20px;

@@ -1,8 +1,8 @@
 @import './Home/sassSettings';
 
 .price-list {
-  margin: 100px 0 0 0;
   @include flexColumn;
+  padding-top: 100px;
 
   .price-name {
     margin: 0 0 40px 0;

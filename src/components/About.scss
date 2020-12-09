@@ -2,7 +2,7 @@
 
 .description {
   @include flexColumn();
-  margin: 100px 0 0 0;
+  padding-top: 100px;
 }
 
 .description-text {

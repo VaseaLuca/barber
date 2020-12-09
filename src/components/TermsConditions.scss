@@ -1,16 +1,16 @@
 @import './Home/sassSettings';
 
-.policy {
+.terms {
   @include flex(column, center);
   padding-top: 100px;
 
-  .policy-header {
+  .terms-header {
     margin: 0 auto 40px auto;
     text-align: center;
     font-size: calc(14px + 1.4vw);
   }
 
-  .policy-description {
+  .terms-description {
     font-size: calc(12px + 0.4vw);
     margin: 0 auto 180px auto;
     padding: 20px 50px;
