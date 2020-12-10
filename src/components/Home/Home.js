@@ -8,7 +8,7 @@ import React, { Suspense } from 'react';
 import about_img from "../assets/Octavian&Madalina.jpg";
 import career_img from "../assets/career_photo.jpg";
 import './Home.scss';
-const Greetings = React.lazy(() => import("./Greetings"), 1000);
+const Greetings = React.lazy(() => import("./Greetings"));
 const About = React.lazy(() => import('./About'));
 const Career = React.lazy(() => import('./About'));
 const ServicePrice = React.lazy(() => import('./Service_Price'));
