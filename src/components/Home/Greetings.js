@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import LazyLoad from 'react-lazyload';
 
 import home_background from '../assets/home_background.jpg';
 import location_pin from '../assets/location.png';
@@ -13,7 +12,6 @@ function Gritings() {
   const [isHovered, setIsHovered]= useState(false);
 
   return (
-    <LazyLoad>
       <div className="greetings">
         <div className="greetings-background">
           <img src={home_background} alt="home_background" />
@@ -46,7 +44,6 @@ function Gritings() {
           </a>
         </div>
       </div>
-    </LazyLoad>
   );
 }
 
