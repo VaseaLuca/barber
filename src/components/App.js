@@ -1,17 +1,6 @@
 import React,{ useState, Suspense, lazy } from 'react';
 import { Route } from 'react-router-dom';
 
-
-// import Navbar from './Navbar';
-// import Backdrop from "./Backdrop";
-// import Drawer from "./Drawer";
-// import Home from './Home/Home';
-// import IndicatiiMaps from './IndicatiiMaps';
-// import About from './About';
-// import PriceList from './PriceList';
-// import Careers from './Careers';
-// import ConfidentialPolicy from './ConfidentialPolicy';
-// import TermsConditions from './TermsConditions';
 import './App.scss';
 const Backdrop = lazy(() => import("./Backdrop"));
 const Drawer = lazy(() => import("./Drawer"));

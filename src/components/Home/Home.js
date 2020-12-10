@@ -18,22 +18,22 @@ const Footer = React.lazy(() => import('./Footer'));
 function Home() {
   return (
     <div className="home">
-      <Suspense fallback={ <div className='home-fallback'>Loading...</div> }>
-          <Greetings />
-        <About
-          title={"Despre Noi"}
-          info={"Armonia perfectă între BarberShop & Coafor"}
-          img={about_img}
-          directory={"/despre"}
-        />
-        <ServicePrice />
-        <Career
-          title={"Cariere"}
-          info={"Verifică dacă sunt poziții deschise în echipa noastră"}
-          img={career_img}
-          directory={"/cariere"}
-        />
-        <Footer />
+      <Suspense fallback={<div className="home-fallback">Loading...</div>}>
+        <Greetings />
+          <About
+            title={"Despre Noi"}
+            info={"Armonia perfectă între BarberShop & Coafor"}
+            img={about_img}
+            directory={"/despre"}
+          />
+          <ServicePrice />
+          <Career
+            title={"Cariere"}
+            info={"Verifică dacă sunt poziții deschise în echipa noastră"}
+            img={career_img}
+            directory={"/cariere"}
+          />
+          <Footer />
       </Suspense>
     </div>
   );
