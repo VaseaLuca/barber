@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 import home_background from '../assets/home_background.jpg';
 import location_pin from '../assets/location.png';
 import location_pin_white from "../assets/location_white.png";
-
 import './Greetings.scss';
 
 function Gritings() {
