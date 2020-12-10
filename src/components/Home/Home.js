@@ -8,7 +8,7 @@ import React, { Suspense } from 'react';
 import about_img from "../assets/Octavian&Madalina.jpg";
 import career_img from "../assets/career_photo.jpg";
 import './Home.scss';
-const Greetings = React.lazy(() => import("./Greetings"));
+const Greetings = React.lazy(() => import("./Greetings"), 1000);
 const About = React.lazy(() => import('./About'));
 const Career = React.lazy(() => import('./About'));
 const ServicePrice = React.lazy(() => import('./Service_Price'));
@@ -17,7 +17,7 @@ const Footer = React.lazy(() => import('./Footer'));
 function Home() {
   return (
     <div className="home">
-      <Suspense fallback={ <div>Loading...</div> }>
+      <Suspense fallback={ <div className='home-fallback'>Loading...</div> }>
         <Greetings />
       <About
         title={"Despre Noi"}
