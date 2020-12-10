@@ -5,3 +5,9 @@
 .app-modal{
   position: fixed;
 }
+.app-fallback{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: calc(16px + 1.4vw);
+}

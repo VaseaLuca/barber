@@ -32,7 +32,7 @@ const [drawerOpen, setDrawerOpen]= useState(false);
 
   return (
     <div className="App">
- <Suspense fallback={<div>Loading...</div>}>
+    <Suspense fallback={<div className='app-fallback'>Loading...</div>}>
       <Backdrop open={drawerOpen} close={()=> setDrawerOpen(!drawerOpen)} />
       <Navbar isDrawerOpen={drawerOpen} openDrawer={()=> setDrawerOpen(!drawerOpen)} />
       <Drawer drawerIsOpen={drawerOpen} close={()=> setDrawerOpen(!drawerOpen)} />

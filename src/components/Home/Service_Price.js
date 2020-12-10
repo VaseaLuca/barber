@@ -1,10 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 
-import hair_Mada_1 from "../assets/hair_Mada_1.jpeg";
-import hair_Mada_2 from "../assets/hair_Mada_2.jpeg";
-import hair_Octav_1 from '../assets/hair_Octav_1.jpeg';
-import hair_Octav_2 from '../assets/hair_Octav_2.jpeg';
+import hair_Mada_1 from "../assets/hair_Mada_1.jpg";
+import hair_Mada_2 from "../assets/hair_Mada_2.jpg";
+import hair_Octav_1 from '../assets/hair_Octav_1.jpg';
+import hair_Octav_2 from '../assets/hair_Octav_2.jpg';
 import './Service_Price.scss';
 
 function Service_Price() {

@@ -3,8 +3,8 @@ import React from 'react'
 
 import AboutCard from './AboutCard';
 import Footer from './Home/Footer';
-import his_photo from "./assets/Octavian.jpeg";
-import her_photo from "./assets/Madalina.jpeg";
+import his_photo from "./assets/Octavian.jpg";
+import her_photo from "./assets/Madalina.jpg";
 import './About.scss';
 
 function About() {
