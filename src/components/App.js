@@ -17,7 +17,7 @@ const Backdrop = lazy(() => import("./Backdrop"));
 const Drawer = lazy(() => import("./Drawer"));
 const Navbar = lazy(()=> import('./Navbar'));
 const Home = lazy(() =>  {
-      return Promise.all([import("./Home/Home"), new Promise(resolve => setTimeout(resolve, 800))]).then(([moduleExports]) => moduleExports);
+      return Promise.all([import("./Home/Home"), new Promise(resolve => setTimeout(resolve, 300))]).then(([moduleExports]) => moduleExports);
   });
 const IndicatiiMaps = lazy(() => import("./IndicatiiMaps"));
 const About = lazy(() => import("./About"));
