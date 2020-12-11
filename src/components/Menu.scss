@@ -1,12 +1,17 @@
 @import './Home/sassSettings';
-
+.menu-net {
+  position: absolute;
+}
 .menu {
   display: inline-block;
   position: relative;
   cursor: pointer;
   width: 50px;
   height: 35px;
-  transform: translate(55%, 0%);
+  transform: translate(55%, -40%);
+  @include mediaSmallSmartphones {
+      transform: translate(20%, -25%);
+  }
 }
 .menu-stick {
   position: absolute;
