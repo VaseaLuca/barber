@@ -1,27 +1,66 @@
-import React from 'react';
+import React, { useState,useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 import fb from "../assets/facebook_logo_white.png";
 import ig from "../assets/instagram_logo_white.png";
+import green from '../assets/green.png';
+import red from '../assets/red.png';
+
 import './Footer.scss';
 
 function Footer () {
+
+  const [date,setDate] = useState(new Date());
+
+  useEffect( () => {
+    const updateOnceAnHour = setInterval( () => setDate(new Date()),3600000);
+    return () => {
+      clearInterval(updateOnceAnHour);
+      }
+    }, [])
+
+  function check() {
+    if (date.getDay() >= 2 && date.getHours() >= 10 && date.getHours() < 18) {
+      return <img src={green} alt="green" />;
+    } else {
+      return <img src={red} alt="green" />;
+    }
+  }
+
+
   return (
     <div className="footer">
       <div className="footer-row">
-        <div className="footer-column"><Link to='/maps'> Indicații Maps </Link></div>
-        <div className="footer-column"><Link to='/despre'> Despre Noi </Link></div>
-        <div className="footer-column"><Link to='/lista-de-preturi'> Servicii & Prețuri </Link></div>
-        <div className="footer-column"><Link to='/cariere'> Cariere </Link></div>
+        <div className="footer-column">
+          <Link to="/maps"> Indicații Maps </Link>
+        </div>
+        <div className="footer-column">
+          <Link to="/despre"> Despre Noi </Link>
+        </div>
+        <div className="footer-column">
+          <Link to="/lista-de-preturi"> Servicii & Prețuri </Link>
+        </div>
+        <div className="footer-column">
+          <Link to="/cariere"> Cariere </Link>
+        </div>
       </div>
       <div className="footer-row">
-        <div className="footer-column"><Link to='/politica-de-confidentialitate'> Politică de confidențialitate </Link></div>
-        <div className="footer-column"><Link to='/termeni-si-conditii'> Termeni și condiții </Link></div>
+        <div className="footer-column">
+          <Link to="/politica-de-confidentialitate">
+            Politică de confidențialitate
+          </Link>
+        </div>
+        <div className="footer-column">
+          <Link to="/termeni-si-conditii"> Termeni și condiții </Link>
+        </div>
       </div>
       <div className="footer-row">
-        <div className="footer-column-none">Luni - Sâmbătă: 10:00 - 18:00</div>
+        <div className="footer-column-none">
+          Marți - Sâmbătă: 10:00 - 18:00
+          {check()}
+        </div>
         <div className="footer-column-holiday">
-          <div className="footer-column-none">Duminică:</div>
+          <div className="footer-column-none">Duminică - Luni:</div>
           <div className="footer-column-close">Închis</div>
         </div>
         <div className="footer-column-tel">
