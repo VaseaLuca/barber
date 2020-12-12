@@ -3,9 +3,6 @@ import { Link } from 'react-router-dom';
 
 import fb from "../assets/facebook_logo_white.png";
 import ig from "../assets/instagram_logo_white.png";
-import green from '../assets/green.png';
-import red from '../assets/red.png';
-
 import './Footer.scss';
 
 function Footer () {
@@ -21,12 +18,11 @@ function Footer () {
 
   function check() {
     if (date.getDay() >= 2 && date.getHours() >= 10 && date.getHours() < 18) {
-      return <img src={green} alt="green" />;
+      return <div className="footer-green-circle" />;
     } else {
-      return <img src={red} alt="green" />;
+      return <div className="footer-red-circle" />;
     }
   }
-
 
   return (
     <div className="footer">

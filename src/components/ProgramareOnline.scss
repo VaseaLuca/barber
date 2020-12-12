@@ -1,0 +1,17 @@
+@import './Home/sassSettings';
+
+.prog {
+  @include flex(column, center);
+  justify-content: space-between;
+  padding-top: 100px;
+  text-align: center;
+}
+
+.prog-description {
+  margin: 150px 15px 350px 15px;
+  display: flex;
+  justify-content: center;
+  font-size: $headerTextSize;
+  font-weight: 600;
+  text-align: center;
+}

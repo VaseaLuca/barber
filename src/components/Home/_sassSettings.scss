@@ -70,6 +70,12 @@ $thinText: 500;
     @content;
   }
 }
+@mixin mediaSmartphones320px {
+  @media (min-width: 320px) and (max-width: 321px) {
+    @content;
+  }
+}
+
 @mixin mediaSmallSmartphones {
   @media (min-width: 280px) and (max-width: 319px) {
     @content;
