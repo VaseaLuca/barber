@@ -30,7 +30,7 @@ function Service_Price() {
         <div className="service-stick">|</div>
         <div className="service-price-description">
           Vei fi cu siguranță încântat de îndemânarea noastră. De la stilul
-          clasic și până la variantele moderne, echipa noastră este pregătită să
+          clasic până la variantele moderne, echipa noastră este pregătită să
           se adapteze dorințelor tale în materie de hairstyling.
         </div>
         <div className="service-stick">|</div>

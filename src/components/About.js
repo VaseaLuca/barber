@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom';
 
 import AboutCard from './AboutCard';
 import Footer from './Home/Footer';
@@ -13,26 +13,26 @@ function About() {
       <div className="description-text">Despre Noi</div>
       <AboutCard
         header="Salut!"
-        description="Octavian își folosește vasta experiență de peste 10 ani în
-            colaborarea cu clienții având în minte un scop clar: să ajute
-            oamenii să se simtă bine cu parul lor și cu ei inșisi. Octavian este
-            un bun ascultator. In egală masură, oferă sugestii si idei in
-            funcție de nevoile individuale, dornic să arate clienților cum să
-            iși pună în valoare calitățile și să ascundă micile defecte.
-            Răsplata sa este satisfacția fiecărei persoane care intră în salon,
-            nu ca și client ci ca si partener și, în timp, prieten."
+        description="Sunt Octavian și îmi folosesc vasta experiență de peste 5 ani în
+            colaborarea cu clienții având în minte un scop clar: să ajut
+            oamenii să se simtă bine cu parul lor și cu ei inșisi. Sunt
+            un bun ascultător. În egală masură, ofer sugestii și idei în
+            funcție de nevoile individuale, sunt dornic să arăt clienților cum să
+            își pună în valoare calitățile și să-și ascundă micile defecte.
+            Răsplata mea este satisfacția fiecărei persoane care întră în salon,
+            nu ca și client ci ca și partener și, în timp, prieten."
         img={his_photo}
       />
       <AboutCard
         header="Bună!"
-        description="Mădălina își folosește vasta experiență de peste 10 ani în
-            colaborarea cu clienții având în minte un scop clar: să ajute
-            oamenii să se simtă bine cu parul lor și cu ei inșisi. Mădălina este
-            un bun ascultator. In egală masură, oferă sugestii si idei in
-            funcție de nevoile individuale, dornic să arate clienților cum să
-            iși pună în valoare calitățile și să ascundă micile defecte.
-            Răsplata sa este satisfacția fiecărei persoane care intră în salon,
-            nu ca și client ci ca si partener și, în timp, prieten."
+        description="Sunt Mădălina și îmi folosesc vasta experiență de peste 10 ani în
+            colaborarea cu clienții având în minte un scop clar: să ajut
+            oamenii să se simtă bine cu parul lor și cu ei inșisi. Sunt o
+            bună ascultătoare. În egală masură, ofer sugestii și idei în
+            funcție de nevoile individuale, sunt dornică să arăt clienților cum să
+            iși pună în valoare calitățile și să-și ascundă micile defecte.
+            Răsplata mea este satisfacția fiecărei persoane care intră în salon,
+            nu ca și client ci ca și partener și, în timp, prieten."
         img={her_photo}
         isReversed
       />
@@ -43,9 +43,9 @@ function About() {
           <a href="tel:0787222302">
             <div className="redirect-button">Suna</div>
           </a>
-          <a href="https://agendamea.ro/s/vV9jL/golden-times?fbclid=IwAR197qgJrTewdjm4RXbLKJzUEXNoCI_wuEXSLDlB9aWoRAvDHGBQr0J-k1Y">
+          <Link to="/programare-online">
             <div className="redirect-button-red">Online</div>
-          </a>
+          </Link>
         </div>
         <div className="redirect-description">De restul ne ocupăm noi</div>
       </div>

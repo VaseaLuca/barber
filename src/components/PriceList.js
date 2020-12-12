@@ -143,100 +143,7 @@ function PriceList() {
       price: "12 RON/10 Gr",
     },
   ];
-  const pricesCosmetica = [
-    {
-      name: "Pensat",
-      time: "15 Min",
-      price: "20 RON",
-    },
-    {
-      name: "Vopsit Sprancene",
-      time: "15 Min",
-      price: "15 RON",
-    },
-    {
-      name: "Epilat picioare lung",
-      time: "20 Min",
-      price: "50 RON",
-    },
-    {
-      name: "Epilat picioare scurt",
-      time: "10 Min",
-      price: "20 RON",
-    },
-    {
-      name: "Epilat brațe lung",
-      time: "20 Min",
-      price: "40 RON",
-    },
-    {
-      name: "Epilat brațe scurt",
-      time: "10 Min",
-      price: "20 RON",
-    },
-    {
-      name: "Epilat axila",
-      time: "10 Min",
-      price: "20 RON",
-    },
-    {
-      name: "Epilat inghinal total",
-      time: "30 Min",
-      price: "45 RON",
-    },
-    {
-      name: "Epilat inghinal parțial",
-      time: "15 Min",
-      price: "20 RON",
-    },
-    {
-      name: "Epilat iterfesier",
-      time: "10 Min",
-      price: "20 RON",
-    },
-    {
-      name: "Epilat bărbie",
-      time: "5 Min",
-      price: "10 RON",
-    },
-    {
-      name: "Epilat pomeți",
-      time: " Min",
-      price: " RON",
-    },
-    {
-      name: "Epilat abdomen",
-      time: "15 Min",
-      price: "20 RON",
-    },
-    {
-      name: "Epilat mustață",
-      time: "5 Min",
-      price: "15 RON",
-    },
-    {
-      name: "Machiaj de zi",
-      time: "60 Min",
-      price: "120 RON",
-    },
-    {
-      name: "Machiaj de seara",
-      time: "90 Min",
-      price: "160 RON",
-    },
-    {
-      name: "Machiaj de seara cu gene",
-      time: "80 Min",
-      price: "180 RON",
-    },
-    {
-      name: "Machiaj mireasa",
-      time: "120 Min",
-      price: "250 RON",
-    },
-  ];
 
-  console.log("Frizerie", pricesFrizerie);
   return (
     <div className="price-list">
       <div className="price-name">Frizerie</div>
@@ -255,18 +162,6 @@ function PriceList() {
       <table>
         <tbody>
           {pricesCoafor.map((price, index) => (
-            <tr key={index}>
-              <td>{price.name}</td>
-              <td>{price.time}</td>
-              <td>{price.price}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
-      <div className="price-name">Cosmetică</div>
-      <table>
-        <tbody>
-          {pricesCosmetica.map((price, index) => (
             <tr key={index}>
               <td>{price.name}</td>
               <td>{price.time}</td>
