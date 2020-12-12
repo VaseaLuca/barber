@@ -10,7 +10,6 @@ const IndicatiiMaps = lazy(() => import("./IndicatiiMaps"));
 const ProgramareOnline = lazy(()=> import('./ProgramareOnline'));
 const About = lazy(() => import("./About"));
 const PriceList = lazy(() => import("./PriceList"));
-const Careers = lazy(() => import("./Careers"));
 const ConfidentialPolicy = lazy(() => import("./ConfidentialPolicy"));
 const TermsConditions = lazy(() => import("./TermsConditions"));
 
@@ -31,7 +30,6 @@ const [drawerOpen, setDrawerOpen]= useState(false);
       <Route path='/programare-online' exact component={ProgramareOnline} />
       <Route path='/despre' exact component={About} />
       <Route path='/lista-de-preturi' exact component={PriceList} />
-      <Route path='/cariere' exact component={Careers} />
       <Route path='/politica-de-confidentialitate' exact component={ConfidentialPolicy} />
       <Route path='/termeni-si-conditii' exact component={TermsConditions} />
     </Suspense>

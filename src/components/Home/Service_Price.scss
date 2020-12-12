@@ -1,8 +1,8 @@
 @import './sassSettings';
 
 .service-price {
-   display: flex;
-
+  display: flex;
+  margin: 100px auto 150px auto;
   @include mediaMobilesTablets() {
     flex-direction: column;
   }

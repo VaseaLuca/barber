@@ -16,6 +16,11 @@ function PriceList() {
       price: "50 RON",
     },
     {
+      name: "Tuns Zero",
+      time: "15 Min",
+      price: "20 RON",
+    },
+    {
       name: "Tuns Păr Lung",
       time: "45 Min",
       price: "50 RON",
@@ -31,9 +36,14 @@ function PriceList() {
       price: "10 RON",
     },
     {
-      name: "Barbă",
+      name: "Barbă Fade",
       time: "15 Min",
       price: "20 RON",
+    },
+    {
+      name: "Barbă",
+      time: "10 Min",
+      price: "10 RON",
     },
     {
       name: "Mustață",
@@ -45,12 +55,12 @@ function PriceList() {
     {
       name: "Tuns Păr Scurt",
       time: "45 Min",
-      price: "40 RON",
+      price: "50 RON",
     },
     {
       name: "Tuns Păr Lung",
       time: "60 Min",
-      price: "50 RON",
+      price: "60 RON",
     },
     {
       name: "Tuns - Schimbare Formă",
@@ -105,7 +115,7 @@ function PriceList() {
     {
       name: "Decapaj",
       time: "60 Min",
-      price: "100 RON",
+      price: "150 RON",
     },
     {
       name: "Coafat Extensii",
@@ -123,9 +133,9 @@ function PriceList() {
       price: "150 RON",
     },
     {
-      name: "Permanent",
+      name: "Permanent (manopera)",
       time: "60 Min",
-      price: "100 RON",
+      price: "150 RON",
     },
     {
       name: "Vopsea/pudra/sol.Permanent",

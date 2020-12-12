@@ -36,9 +36,6 @@ function Footer () {
         <div className="footer-column">
           <Link to="/lista-de-preturi"> Servicii & Prețuri </Link>
         </div>
-        <div className="footer-column">
-          <Link to="/cariere"> Cariere </Link>
-        </div>
       </div>
       <div className="footer-row">
         <div className="footer-column">
@@ -65,10 +62,14 @@ function Footer () {
         <div className="footer-column-social">
           Social:
           <div className="footer-column-fb">
-            <img src={fb} alt="" />
+            <a href="https://www.facebook.com/goldentimes.oficial/">
+              <img src={fb} alt="" />
+            </a>
           </div>
           <div className="footer-column-ig">
-            <img src={ig} alt="" />
+            <a href="https://www.instagram.com/goldentimes__/">
+              <img src={ig} alt="" />
+            </a>
           </div>
         </div>
       </div>
