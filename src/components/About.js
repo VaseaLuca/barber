@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
 
 import AboutCard from './AboutCard';
 import Footer from './Home/Footer';
@@ -43,9 +42,9 @@ function About() {
           <a href="tel:0787222302">
             <div className="redirect-button">Suna</div>
           </a>
-          <Link to="/programare-online">
+          <a href="https://agendamea.ro/s/vV9jL/golden-times">
             <div className="redirect-button-red">Online</div>
-          </Link>
+          </a>
         </div>
         <div className="redirect-description">De restul ne ocupăm noi</div>
       </div>

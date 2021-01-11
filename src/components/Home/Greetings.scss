@@ -53,6 +53,12 @@
   margin: 0 auto 20px 10px;
   border-color: #f60000;
   color: #f60000;
+  @include mediaSmartphones() {
+    margin: 0 auto 20px auto;
+  }
+  @include mediaSmallSmartphones() {
+    margin: 0 auto 20px auto;
+  }
   &:hover{
     background-color: #f60000;
   }

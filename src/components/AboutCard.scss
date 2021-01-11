@@ -66,6 +66,24 @@
   @include mediaSmallSmartphones {
     margin: 0 10px 20px 10px;
   }
+  .about-description-social {
+    margin: 10px 0 0 0;
+    font-weight: 600;
+    .description-social-ig {
+      width: 20px;
+      margin: 0 10px;
+      transition: all 0.1s ease-in-out;
+    &:hover {
+      transform: scale(1.17);
+    }
+   }
+    .description-social-fb {
+      width: 11px;
+    &:hover {
+      transform: scale(1.17);
+    }
+   }
+  }
 }
 .description-img {
   flex-basis: 60%;

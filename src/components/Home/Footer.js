@@ -9,16 +9,16 @@ function Footer () {
 
   const [date,setDate] = useState(new Date());
 
-  useEffect( () => {
-    const updateOnceAnHour = setInterval( () => setDate(new Date()),3600000);
+  useEffect(() => {
+    const updateOnceAminute = setInterval(() => setDate(new Date()), 60000);
     return () => {
-      clearInterval(updateOnceAnHour);
+      clearInterval(updateOnceAminute);
       }
     }, [])
 
   function check() {
     if (date.getDay() >= 2 && date.getHours() >= 10 && date.getHours() < 18) {
-      return <div className="footer-green-circle" />;
+      return <div className="footer-green-circle" />
     } else {
       return <div className="footer-red-circle" />;
     }
