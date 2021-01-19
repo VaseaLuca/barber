@@ -81,5 +81,11 @@
   font-weight: 600;
 }
 .maps-call-button {
-  @include homeBtn();
+  @include homeBtn;
+  margin: 0 5px 20px 5px;
+  border-color: #f60000;
+  color: #f60000;
+  &:hover {
+    background-color: #f60000;
+  }
 }

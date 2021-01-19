@@ -38,9 +38,9 @@ function Gritings() {
             )}
           </div>
         </Link>
-          <a href="https://agendamea.ro/s/vV9jL/golden-times">
+          {/* <a href="https://agendamea.ro/s/vV9jL/golden-times">
             <div className="greetings-button-red">Programare Online</div>
-          </a>
+          </a> */}
       </div>
     </div>
   );

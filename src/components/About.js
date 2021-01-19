@@ -40,11 +40,11 @@ function About() {
         <div className="redirect-content">Nu ezita să faci o programare</div>
         <div className="redirect-button-block">
           <a href="tel:0787222302">
-            <div className="redirect-button">Suna</div>
+            <div className="redirect-button-red">Suna</div>
           </a>
-          <a href="https://agendamea.ro/s/vV9jL/golden-times">
+          {/* <a href="https://agendamea.ro/s/vV9jL/golden-times">
             <div className="redirect-button-red">Online</div>
-          </a>
+          </a> */}
         </div>
         <div className="redirect-description">De restul ne ocupăm noi</div>
       </div>
