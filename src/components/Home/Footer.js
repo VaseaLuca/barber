@@ -48,12 +48,16 @@ function Footer () {
         </div>
       </div>
       <div className="footer-row">
+        <div className="footer-column-holiday">
+          <div className="footer-column-none">Luni : </div>
+          <div className="footer-column-close-monday">12:00 - 18:00</div>
+        </div>
         <div className="footer-column-none">
           Marți - Sâmbătă: 10:00 - 18:00
           {check()}
         </div>
         <div className="footer-column-holiday">
-          <div className="footer-column-none">Duminică - Luni:</div>
+          <div className="footer-column-none">Duminică : </div>
           <div className="footer-column-close">Închis</div>
         </div>
         <div className="footer-column-tel">
