@@ -5,7 +5,7 @@ import logo_white from "./assets/Golden_Times_test.png";
 import Menu from "./Menu";
 import "./Navbar.scss";
 
-const Navbar = ({ isDrawerOpen, openDrawer }) => {
+function Navbar({ isDrawerOpen, openDrawer }) {
   return (
     <div className="navbar">
       <div className="navbar-menu">
@@ -13,8 +13,7 @@ const Navbar = ({ isDrawerOpen, openDrawer }) => {
       </div>
       <div className="navbar-logo">
         <Link to="/">
-          {" "}
-          <img src={logo_white} alt="" />{" "}
+          <img src={logo_white} alt="" />
         </Link>
       </div>
     </div>

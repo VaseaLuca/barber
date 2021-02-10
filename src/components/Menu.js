@@ -2,7 +2,7 @@ import React from "react";
 
 import "./Menu.scss";
 
-const Menu = ({ openDrawer, isDrawerOpen }) => {
+function Menu({ openDrawer, isDrawerOpen }) {
   return (
     <div className="menu-net">
       <div className="menu" onClick={openDrawer}>

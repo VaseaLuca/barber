@@ -5,7 +5,7 @@ import location_pin_white from "./assets/location_white.png";
 import Footer from "./Home/Footer";
 import "./IndicatiiMaps.scss";
 
-const IndicatiiMaps = () => {
+function IndicatiiMaps() {
   const [isHovered, setIsHovered] = useState(false);
   return (
     <div className="maps">

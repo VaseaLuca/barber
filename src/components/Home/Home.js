@@ -13,7 +13,7 @@ const About = React.lazy(() => import("./About"));
 const ServicePrice = React.lazy(() => import("./Service_Price"));
 const Footer = React.lazy(() => import("./Footer"));
 
-const Home = () => {
+function Home () {
   return (
     <div className="home">
       <Suspense fallback={<div className="home-fallback">Loading...</div>}>

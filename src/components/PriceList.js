@@ -3,7 +3,7 @@ import React from "react";
 import Footer from "./Home/Footer";
 import "./PriceList.scss";
 
-const PriceList = () => {
+function PriceList() {
   const pricesFrizerie = [
     {
       name: "Tuns Clasic",

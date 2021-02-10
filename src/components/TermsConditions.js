@@ -3,7 +3,7 @@ import React from "react";
 import Footer from "./Home/Footer";
 import "./TermsConditions.scss";
 
-const TermsConditions = () => {
+function TermsConditions() {
   return (
     <div className="terms">
       <div className="terms-header">Termeni și condiții</div>

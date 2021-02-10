@@ -5,7 +5,7 @@ import fb from "../assets/facebook_logo_white.png";
 import ig from "../assets/instagram_logo_white.png";
 import "./Footer.scss";
 
-const Footer = () => {
+function Footer () {
   const [date, setDate] = useState(new Date());
 
   useEffect(() => {

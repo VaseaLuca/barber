@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 import "./Drawer.scss";
 
-const Drawer = ({ drawerIsOpen, close }) => {
+function Drawer ({ drawerIsOpen, close }) {
   return (
     <div className={`drawer ${drawerIsOpen && `open`}`}>
       <ul onClick={close}>

@@ -3,7 +3,7 @@ import React from "react";
 import Footer from "./Home/Footer";
 import "./ProgramareOnline.scss";
 
-const ProgramareOnline = () => {
+function ProgramareOnline() {
   return (
     <div className="prog">
       <div className="prog-description">

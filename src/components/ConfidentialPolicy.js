@@ -3,7 +3,7 @@ import React from "react";
 import Footer from "./Home/Footer";
 import "./ConfidentialPolicy.scss";
 
-const ConfidentialPolicy = () => {
+function ConfidentialPolicy () {
   return (
     <div className="policy">
       <div className="policy-header">

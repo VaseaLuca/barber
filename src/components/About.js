@@ -6,7 +6,7 @@ import his_photo from "./assets/Octavian.jpg";
 import her_photo from "./assets/Madalina.jpg";
 import "./About.scss";
 
-const About = () => {
+function About () {
   return (
     <div className="description">
       <div className="description-text">Despre Noi</div>

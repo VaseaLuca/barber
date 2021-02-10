@@ -7,7 +7,7 @@ import hair_Octav_1 from "../assets/hair_Octav_1.jpg";
 import hair_Octav_2 from "../assets/hair_Octav_2.jpg";
 import "./Service_Price.scss";
 
-const Service_Price = () => {
+function Service_Price () {
   return (
     <div className="service-price">
       <div className="service-price-img-block">
