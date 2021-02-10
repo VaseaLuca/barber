@@ -1,12 +1,12 @@
-import React from 'react'
+import React from "react";
 
-import AboutCard from './AboutCard';
-import Footer from './Home/Footer';
+import AboutCard from "./AboutCard";
+import Footer from "./Home/Footer";
 import his_photo from "./assets/Octavian.jpg";
 import her_photo from "./assets/Madalina.jpg";
-import './About.scss';
+import "./About.scss";
 
-function About() {
+const About = () => {
   return (
     <div className="description">
       <div className="description-text">Despre Noi</div>
@@ -52,5 +52,4 @@ function About() {
     </div>
   );
 }
-
 export default About;

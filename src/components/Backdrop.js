@@ -1,9 +1,8 @@
-import React from 'react'
+import React from "react";
 
-import './Backdrop.scss';
+import "./Backdrop.scss";
 
-function Backdrop({ open, close }) {
+const Backdrop = ({ open, close }) => {
   return <div className={`${open && "backdrop"}`} onClick={close}></div>;
 }
-
 export default Backdrop;

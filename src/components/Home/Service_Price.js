@@ -1,13 +1,13 @@
-import React from 'react'
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 
 import hair_Mada_1 from "../assets/hair_Mada_1.jpg";
 import hair_Mada_2 from "../assets/hair_Mada_2.jpg";
-import hair_Octav_1 from '../assets/hair_Octav_1.jpg';
-import hair_Octav_2 from '../assets/hair_Octav_2.jpg';
-import './Service_Price.scss';
+import hair_Octav_1 from "../assets/hair_Octav_1.jpg";
+import hair_Octav_2 from "../assets/hair_Octav_2.jpg";
+import "./Service_Price.scss";
 
-function Service_Price() {
+const Service_Price = () => {
   return (
     <div className="service-price">
       <div className="service-price-img-block">
@@ -30,8 +30,8 @@ function Service_Price() {
         <div className="service-stick">|</div>
         <div className="service-price-description">
           Vei fi cu siguranță încântat de îndemânarea noastră. De la stilul
-          clasic până la variantele moderne, echipa noastră este pregătită să
-          se adapteze dorințelor tale în materie de hairstyling.
+          clasic până la variantele moderne, echipa noastră este pregătită să se
+          adapteze dorințelor tale în materie de hairstyling.
         </div>
         <div className="service-stick">|</div>
         <div className="service-price-description">

@@ -1,15 +1,13 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
-import home_background from '../assets/home_background.jpg';
-import location_pin from '../assets/location.png';
+import home_background from "../assets/home_background.jpg";
+import location_pin from "../assets/location.png";
 import location_pin_white from "../assets/location_white.png";
-import './Greetings.scss';
+import "./Greetings.scss";
 
-function Gritings() {
-
-  const [isHovered, setIsHovered]= useState(false);
-
+const Gritings = () => {
+  const [isHovered, setIsHovered] = useState(false);
   return (
     <div className="greetings">
       <div className="greetings-background">
@@ -38,12 +36,11 @@ function Gritings() {
             )}
           </div>
         </Link>
-          {/* <a href="https://agendamea.ro/s/vV9jL/golden-times">
+        {/* <a href="https://agendamea.ro/s/vV9jL/golden-times">
             <div className="greetings-button-red">Programare Online</div>
           </a> */}
       </div>
     </div>
   );
 }
-
-export default Gritings
+export default Gritings;

@@ -1,29 +1,26 @@
-import React, { useState,useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 import fb from "../assets/facebook_logo_white.png";
 import ig from "../assets/instagram_logo_white.png";
-import './Footer.scss';
+import "./Footer.scss";
 
-function Footer () {
-
-  const [date,setDate] = useState(new Date());
+const Footer = () => {
+  const [date, setDate] = useState(new Date());
 
   useEffect(() => {
     const updateOnceAminute = setInterval(() => setDate(new Date()), 60000);
     return () => {
       clearInterval(updateOnceAminute);
-      }
-    }, [])
-
+    };
+  }, []);
   function check() {
     if (date.getDay() >= 2 && date.getHours() >= 10 && date.getHours() < 18) {
-      return <div className="footer-green-circle" />
+      return <div className="footer-green-circle" />;
     } else {
       return <div className="footer-red-circle" />;
     }
   }
-
   return (
     <div className="footer">
       <div className="footer-row">
@@ -79,5 +76,5 @@ function Footer () {
       </div>
     </div>
   );
-}
-export default Footer
+};
+export default Footer;

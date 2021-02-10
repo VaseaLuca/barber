@@ -1,9 +1,9 @@
-import React from 'react'
+import React from "react";
 
-import Footer from './Home/Footer';
-import './PriceList.scss';
+import Footer from "./Home/Footer";
+import "./PriceList.scss";
 
-function PriceList() {
+const PriceList = () => {
   const pricesFrizerie = [
     {
       name: "Tuns Clasic",
@@ -173,6 +173,5 @@ function PriceList() {
       <Footer />
     </div>
   );
-}
-
+};
 export default PriceList;

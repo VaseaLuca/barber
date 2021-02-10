@@ -1,11 +1,10 @@
-import React from 'react'
+import React from "react";
 
 import ig from "./assets/instagram_logo.png";
-import fb from './assets/facebook_logo_black.png';
-import './AboutCard.scss';
+import fb from "./assets/facebook_logo_black.png";
+import "./AboutCard.scss";
 
-
-function AboutCard({ header, description, img, isReversed }) {
+const AboutCard = ({ header, description, img, isReversed }) => {
   return (
     <div className={`about-card ${isReversed && `reverse`}`}>
       <div className="description-text-block">
@@ -14,8 +13,12 @@ function AboutCard({ header, description, img, isReversed }) {
           {description}
           <div className="about-description-social">
             Vezi lucrările noastre:
-            <a href="https://www.facebook.com/goldentimes.oficial"><img className="description-social-ig" src={ig} alt="ig" /></a>
-            <a href="https://www.instagram.com/goldentimes__/"><img className="description-social-fb" src={fb} alt="fb" /></a>
+            <a href="https://www.facebook.com/goldentimes.oficial">
+              <img className="description-social-ig" src={ig} alt="ig" />
+            </a>
+            <a href="https://www.instagram.com/goldentimes__/">
+              <img className="description-social-fb" src={fb} alt="fb" />
+            </a>
           </div>
         </div>
       </div>
@@ -24,6 +27,5 @@ function AboutCard({ header, description, img, isReversed }) {
       </div>
     </div>
   );
-}
-
-export default AboutCard
+};
+export default AboutCard;

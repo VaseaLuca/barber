@@ -1,18 +1,16 @@
-import React from 'react'
+import React from "react";
 
-import Footer from './Home/Footer';
+import Footer from "./Home/Footer";
+import "./ProgramareOnline.scss";
 
-import './ProgramareOnline.scss';
-
-function ProgramareOnline() {
+const ProgramareOnline = () => {
   return (
     <div className="prog">
       <div className="prog-description">
         Serviciul de programări online va fi disponibil din 5 ianuarie 2021
       </div>
-        <Footer />
+      <Footer />
     </div>
   );
 }
-
 export default ProgramareOnline;

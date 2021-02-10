@@ -1,15 +1,14 @@
-import React from 'react';
+import React from "react";
 
-import './Menu.scss';
+import "./Menu.scss";
 
-function Menu({ openDrawer, isDrawerOpen }) {
+const Menu = ({ openDrawer, isDrawerOpen }) => {
   return (
-    <div className='menu-net'>
+    <div className="menu-net">
       <div className="menu" onClick={openDrawer}>
         <div className={`menu-stick ${isDrawerOpen && `trigger`}`}></div>
       </div>
     </div>
   );
 }
-
-export default Menu
+export default Menu;

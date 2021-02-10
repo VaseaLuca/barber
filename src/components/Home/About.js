@@ -1,9 +1,9 @@
-import React from 'react'
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 
-import './About.scss';
+import "./About.scss";
 
-function About({ title, info, img, directory }) {
+const About = ({ title, info, img, directory }) => {
   return (
     <div className="about">
       <div className="about-text-block">
@@ -18,6 +18,6 @@ function About({ title, info, img, directory }) {
       </div>
     </div>
   );
-}
+};
 
 export default About;

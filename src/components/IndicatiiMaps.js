@@ -1,13 +1,12 @@
-import React, {useState} from 'react';
+import React, { useState } from "react";
 
 import location_pin from "./assets/location.png";
 import location_pin_white from "./assets/location_white.png";
-import Footer from './Home/Footer';
-import './IndicatiiMaps.scss';
+import Footer from "./Home/Footer";
+import "./IndicatiiMaps.scss";
 
-function IndicatiiMaps() {
-
-const [isHovered, setIsHovered] = useState(false);
+const IndicatiiMaps = () => {
+  const [isHovered, setIsHovered] = useState(false);
   return (
     <div className="maps">
       <div className="maps-first-block">
@@ -54,5 +53,4 @@ const [isHovered, setIsHovered] = useState(false);
     </div>
   );
 }
-
 export default IndicatiiMaps;

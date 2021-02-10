@@ -25,9 +25,7 @@
     transition: 0.2s ease-in-out;
   }
 }
-
 // Sass settings for the Home page buttons, header text size, description text size etc ...
-
 $headerTextSize: calc(16px + 1.4vw);
 $descriptionTextSize: calc(14px + 0.4vw);
 $btnTextSize: calc(12px + 0.5vw);
@@ -37,7 +35,6 @@ $boldText: 600;
 $thinText: 500;
 
 // Media Queries 
-
 @mixin mediaDesktop {
   @media (min-width: 1281px) {
     @content;
