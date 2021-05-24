@@ -12,7 +12,7 @@ const PriceList = lazy(() => import("./PriceList"));
 const ConfidentialPolicy = lazy(() => import("./ConfidentialPolicy"));
 const TermsConditions = lazy(() => import("./TermsConditions"));
 
-function App () {
+const App = () => {
   const [drawerOpen, setDrawerOpen] = useState(false);
 
   return (

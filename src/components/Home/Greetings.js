@@ -6,7 +6,7 @@ import location_pin from "../assets/location.png";
 import location_pin_white from "../assets/location_white.png";
 import "./Greetings.scss";
 
-function Gritings () {
+const Gritings = () => {
   const [isHovered, setIsHovered] = useState(false);
   return (
     <div className="greetings">
@@ -36,9 +36,14 @@ function Gritings () {
             )}
           </div>
         </Link>
-        {/* <a href="https://agendamea.ro/s/vV9jL/golden-times">
-            <div className="greetings-button-red">Programare Online</div>
-          </a> */}
+
+        <a
+          href="https://stailer.ro/widget/golden-times"
+          rel="noreferrer"
+          target="_blank"
+        >
+          <div className="greetings-button-red">Programare Online</div>
+        </a>
       </div>
     </div>
   );

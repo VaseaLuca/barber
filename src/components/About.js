@@ -6,8 +6,7 @@ import his_photo from "./assets/Octavian.jpg";
 import her_photo from "./assets/Madalina.jpg";
 import "./About.scss";
 
-function About () {
-  return (
+const About = () => (
     <div className="description">
       <div className="description-text">Despre Noi</div>
       <AboutCard
@@ -42,14 +41,17 @@ function About () {
           <a href="tel:0787222302">
             <div className="redirect-button-red">Suna</div>
           </a>
-          {/* <a href="https://agendamea.ro/s/vV9jL/golden-times">
-            <div className="redirect-button-red">Online</div>
-          </a> */}
+          <a
+            href="https://stailer.ro/widget/golden-times"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <div className="redirect-button-red">Programare Online</div>
+          </a>
         </div>
         <div className="redirect-description">De restul ne ocupăm noi</div>
       </div>
       <Footer />
     </div>
   );
-}
 export default About;

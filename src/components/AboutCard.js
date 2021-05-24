@@ -4,8 +4,7 @@ import ig from "./assets/instagram_logo.png";
 import fb from "./assets/facebook_logo_black.png";
 import "./AboutCard.scss";
 
-function AboutCard ({ header, description, img, isReversed }) {
-  return (
+const AboutCard = ({ header, description, img, isReversed }) => (
     <div className={`about-card ${isReversed && `reverse`}`}>
       <div className="description-text-block">
         <div className="description-header"> {header} </div>
@@ -27,5 +26,4 @@ function AboutCard ({ header, description, img, isReversed }) {
       </div>
     </div>
   );
-};
 export default AboutCard;

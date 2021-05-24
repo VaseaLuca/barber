@@ -3,8 +3,7 @@ import { Link } from "react-router-dom";
 
 import "./Drawer.scss";
 
-function Drawer ({ drawerIsOpen, close }) {
-  return (
+const Drawer = ({ drawerIsOpen, close }) => (
     <div className={`drawer ${drawerIsOpen && `open`}`}>
       <ul onClick={close}>
         <Link to="/maps">
@@ -25,5 +24,4 @@ function Drawer ({ drawerIsOpen, close }) {
       </ul>
     </div>
   );
-}
 export default Drawer;

@@ -7,8 +7,7 @@ import hair_Octav_1 from "../assets/hair_Octav_1.jpg";
 import hair_Octav_2 from "../assets/hair_Octav_2.jpg";
 import "./Service_Price.scss";
 
-function Service_Price () {
-  return (
+const Service_Price = () => (
     <div className="service-price">
       <div className="service-price-img-block">
         <div className="service-price-img">
@@ -46,6 +45,4 @@ function Service_Price () {
       </div>
     </div>
   );
-}
-
 export default Service_Price;

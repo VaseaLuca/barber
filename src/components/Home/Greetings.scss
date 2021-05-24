@@ -41,6 +41,7 @@
   }
   transition: 0.2s ease-in-out;
 }
+
 .greetings-button {
   @include homeBtn();
   margin: 0 auto 20px auto;

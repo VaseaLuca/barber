@@ -3,8 +3,7 @@ import { Link } from "react-router-dom";
 
 import "./About.scss";
 
-function About ({ title, info, img, directory }) {
-  return (
+const About = ({ title, info, img, directory }) => (
     <div className="about">
       <div className="about-text-block">
         <div className="about-text">{title}</div>
@@ -18,6 +17,4 @@ function About ({ title, info, img, directory }) {
       </div>
     </div>
   );
-};
-
 export default About;

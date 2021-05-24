@@ -3,8 +3,7 @@ import React from "react";
 import Footer from "./Home/Footer";
 import "./ConfidentialPolicy.scss";
 
-function ConfidentialPolicy () {
-  return (
+const ConfidentialPolicy = () => (
     <div className="policy">
       <div className="policy-header">
         Politica de prelucrare a datelor personale
@@ -52,5 +51,4 @@ function ConfidentialPolicy () {
       <Footer />
     </div>
   );
-}
 export default ConfidentialPolicy;

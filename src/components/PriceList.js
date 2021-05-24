@@ -3,7 +3,7 @@ import React from "react";
 import Footer from "./Home/Footer";
 import "./PriceList.scss";
 
-function PriceList() {
+const PriceList = () => {
   const pricesFrizerie = [
     {
       name: "Tuns Clasic",
@@ -99,18 +99,28 @@ function PriceList() {
     },
     {
       name: "Vopsit Rădăcină",
-      time: "30 Min",
-      price: "40 RON",
+      time: "90 Min",
+      price: "200-300 RON",
     },
     {
       name: "Vopsit Total",
-      time: "40 Min",
-      price: "60 RON",
+      time: "120 Min",
+      price: "250-350 RON",
     },
     {
       name: "Vopsit Suvițe",
-      time: "60 Min",
-      price: "100 RON",
+      time: "180 Min",
+      price: "350-450 RON",
+    },
+    {
+      name: "Balayage",
+      time: "240-480 Min",
+      price: "500-900 RON",
+    },
+    {
+      name: "Decolorat",
+      time: "240-360 Min",
+      price: "500-700 RON",
     },
     {
       name: "Decapaj",
@@ -123,24 +133,14 @@ function PriceList() {
       price: "110 RON",
     },
     {
-      name: "Montat Extensii",
-      time: "120 Min",
-      price: "7 RON/mesa",
-    },
-    {
       name: "Montat Extensii Bandă",
       time: "90 Min",
       price: "150 RON",
     },
     {
       name: "Permanent (manopera)",
-      time: "60 Min",
-      price: "150 RON",
-    },
-    {
-      name: "Vopsea/pudra/sol.Permanent",
-      time: "",
-      price: "12 RON/10 Gr",
+      time: "120 Min",
+      price: "250-350 RON",
     },
   ];
 
@@ -149,8 +149,8 @@ function PriceList() {
       <div className="price-name">Frizerie</div>
       <table>
         <tbody>
-          {pricesFrizerie.map((price, index) => (
-            <tr key={index}>
+          {pricesFrizerie.map((price =>
+            <tr key={price.name}>
               <td>{price.name}</td>
               <td>{price.time}</td>
               <td>{price.price}</td>
@@ -161,8 +161,8 @@ function PriceList() {
       <div className="price-name">Coafor</div>
       <table>
         <tbody>
-          {pricesCoafor.map((price, index) => (
-            <tr key={index}>
+          {pricesCoafor.map((price => 
+            <tr key={price.name}>
               <td>{price.name}</td>
               <td>{price.time}</td>
               <td>{price.price}</td>
