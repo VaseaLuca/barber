@@ -42,7 +42,7 @@ const Gritings = () => {
           rel="noreferrer"
           target="_blank"
         >
-          <div className="greetings-button-red">Programare Online</div>
+          <div className="greetings-button-red">Programează-te Online</div>
         </a>
       </div>
     </div>

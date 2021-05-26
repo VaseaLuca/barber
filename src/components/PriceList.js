@@ -53,19 +53,9 @@ const PriceList = () => {
   ];
   const pricesCoafor = [
     {
-      name: "Tuns Păr Scurt",
-      time: "45 Min",
-      price: "50 RON",
-    },
-    {
-      name: "Tuns Păr Lung",
+      name: "Pachet Tuns",
       time: "60 Min",
-      price: "60 RON",
-    },
-    {
-      name: "Tuns - Schimbare Formă",
-      time: "60 Min",
-      price: "60 RON",
+      price: "120 RON",
     },
     {
       name: "Spălat",

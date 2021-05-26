@@ -46,7 +46,7 @@ const About = () => (
             rel="noreferrer"
             target="_blank"
           >
-            <div className="redirect-button-red">Programare Online</div>
+            <div className="redirect-button-red">Programează-te Online</div>
           </a>
         </div>
         <div className="redirect-description">De restul ne ocupăm noi</div>
