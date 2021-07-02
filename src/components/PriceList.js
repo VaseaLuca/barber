@@ -8,7 +8,7 @@ const PriceList = () => {
     {
       name: "Tuns Clasic",
       time: "30 Min",
-      price: "40 RON",
+      price: "50 RON",
     },
     {
       name: "Tuns Fade",
