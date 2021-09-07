@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 
 import fb from "../assets/facebook_logo_white.png";
@@ -6,21 +6,24 @@ import ig from "../assets/instagram_logo_white.png";
 import "./Footer.scss";
 
 const Footer = () => {
-  const [date, setDate] = useState(new Date());
+  const [date, setDate] = React.useState(new Date());
 
-  useEffect(() => {
+  React.useEffect(() => {
     const updateOnceAminute = setInterval(() => setDate(new Date()), 60000);
     return () => {
       clearInterval(updateOnceAminute);
     };
-  }, []);
-  function check() {
+  }, [date]);
+
+  const checkHour = React.useMemo(
+    () => {
     if (date.getDay() >= 2 && date.getHours() >= 10 && date.getHours() < 18) {
       return <div className="footer-green-circle" />;
-    } else {
+    } 
       return <div className="footer-red-circle" />;
-    }
-  }
+
+  }, [date]);
+
   return (
     <div className="footer">
       <div className="footer-row">
@@ -45,11 +48,10 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer-row">
-        <div className="footer-column-holiday">
-        </div>
+        <div className="footer-column-holiday"></div>
         <div className="footer-column-none">
           Marți - Sâmbătă: 10:00 - 18:00
-          {check()}
+          {checkHour}
         </div>
         <div className="footer-column-holiday">
           <div className="footer-column-none">Duminică - Luni : </div>
@@ -66,7 +68,7 @@ const Footer = () => {
             </a>
           </div>
           <div className="footer-column-ig">
-            <a href="https://www.instagram.com/goldentimes__/">
+            <a href="https://www.instagram.com/goldentimes.oficial/">
               <img src={ig} alt="" />
             </a>
           </div>

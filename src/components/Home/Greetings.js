@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 
 import home_background from "../assets/home_background.jpg";
@@ -7,7 +7,7 @@ import location_pin_white from "../assets/location_white.png";
 import "./Greetings.scss";
 
 const Gritings = () => {
-  const [isHovered, setIsHovered] = useState(false);
+  const [isHovered, setIsHovered] = React.useState(false);
   return (
     <div className="greetings">
       <div className="greetings-background">
