@@ -145,21 +145,23 @@ const priceManichiura = [
     price: "60 RON",
   },
   {
-    name: "Manichiură Semipermanentă",
-    time: "60 Min",
-    price: "70 RON",
-  },
-  {
-    name: "Pedichiură Semipermanentă",
+    name: "Manichiură cu ojă Semipermanentă",
     time: "60 Min",
     price: "80 RON",
   },
   {
+    name: "Pedichiură cu ojă Semipermanentă",
+    time: "60 Min",
+    price: "90 RON",
+  },
+  {
     name: "Îndepărtat Semipermanentă",
+    time: "10 Min",
     price: "20 RON",
   },
   {
     name: "Îndepărtat Gel",
+    time: "15 Min",
     price: "30 RON",
   },
 ];
