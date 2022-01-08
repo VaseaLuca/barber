@@ -7,12 +7,12 @@ const pricesFrizerie = [
   {
     name: "Tuns Clasic",
     time: "30 Min",
-    price: "50 RON",
+    price: "60 RON",
   },
   {
     name: "Tuns Fade",
     time: "45 Min",
-    price: "50 RON",
+    price: "60 RON",
   },
   {
     name: "Tuns Zero",
@@ -54,7 +54,7 @@ const pricesCoafor = [
   {
     name: "Pachet Tuns",
     time: "60 Min",
-    price: "120 RON",
+    price: "140 RON",
   },
   {
     name: "Spălat",

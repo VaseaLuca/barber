@@ -15,26 +15,41 @@ const Footer = () => {
     };
   }, [date]);
 
-  const checkHour = React.useMemo(
-    () => {
-    if (date.getDay() >= 2 && date.getHours() >= 10 && date.getHours() < 18) {
+  const checkHour = React.useMemo(() => {
+    if (
+      date.getDay() >= 2 &&
+      date.getDay() !== 7 &&
+      date.getHours() >= 10 &&
+      date.getHours() < 18
+    ) {
       return <div className="footer-green-circle" />;
-    } 
-      return <div className="footer-red-circle" />;
+    }
+    return <div className="footer-red-circle" />;
+  }, [date]);
 
+  const checkHourWeekend = React.useMemo(() => {
+    if (
+      date.getDay() === 6 &&
+      date.getDay() !== 7 &&
+      date.getHours() >= 10 &&
+      date.getHours() < 16
+    ) {
+      return <div className="footer-green-circle" />;
+    }
+    return <div className="footer-red-circle" />;
   }, [date]);
 
   return (
     <div className="footer">
       <div className="footer-row">
         <div className="footer-column">
-          <Link to="/maps"> Indicații Maps </Link>
+          <Link to="/maps">Indicații Maps</Link>
         </div>
         <div className="footer-column">
-          <Link to="/despre"> Despre Noi </Link>
+          <Link to="/despre">Despre Noi</Link>
         </div>
         <div className="footer-column">
-          <Link to="/lista-de-preturi"> Servicii & Prețuri </Link>
+          <Link to="/lista-de-preturi">Servicii & Prețuri</Link>
         </div>
       </div>
       <div className="footer-row">
@@ -44,14 +59,18 @@ const Footer = () => {
           </Link>
         </div>
         <div className="footer-column">
-          <Link to="/termeni-si-conditii"> Termeni și condiții </Link>
+          <Link to="/termeni-si-conditii">Termeni și condiții</Link>
         </div>
       </div>
       <div className="footer-row">
         <div className="footer-column-holiday"></div>
         <div className="footer-column-none">
-          Marți - Sâmbătă: 10:00 - 18:00
+          Marți - Vineri: 10:00 - 18:00
           {checkHour}
+        </div>
+        <div className="footer-column-none">
+          Sâmbătă: 10:00 - 16:00
+          {checkHourWeekend}
         </div>
         <div className="footer-column-holiday">
           <div className="footer-column-none">Duminică - Luni : </div>
