@@ -8,6 +8,7 @@ import "./Greetings.scss";
 
 const Gritings = () => {
   const [isHovered, setIsHovered] = React.useState(false);
+
   return (
     <div className="greetings">
       <div className="greetings-background">
@@ -29,6 +30,7 @@ const Gritings = () => {
             onMouseLeave={() => setIsHovered(false)}
           >
             Vezi
+            
             {isHovered ? (
               <img src={location_pin_white} alt="" />
             ) : (

@@ -36,9 +36,11 @@
   @include mediaSmartphones() {
     flex-direction: column-reverse;
   }
+
   @include mediaSmallSmartphones() {
     flex-direction: column-reverse;
   }
+  
   transition: 0.2s ease-in-out;
 }
 

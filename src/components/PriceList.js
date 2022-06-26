@@ -5,49 +5,39 @@ import "./PriceList.scss";
 
 const pricesFrizerie = [
   {
-    name: "Tuns Clasic",
-    time: "30 Min",
+    name: "Tuns Fade",
+    time: "60 Min",
     price: "60 RON",
   },
   {
-    name: "Tuns Fade",
-    time: "45 Min",
+    name: "Tuns Clasic & Aranjat",
+    time: "60 Min",
     price: "60 RON",
   },
   {
     name: "Tuns Zero",
-    time: "15 Min",
-    price: "20 RON",
+    time: "30 Min",
+    price: "30 RON",
   },
   {
-    name: "Tuns Păr Lung",
-    time: "45 Min",
-    price: "50 RON",
-  },
-  {
-    name: "Contur",
-    time: "10 Min",
-    price: "15 RON",
-  },
-  {
-    name: "Spălat",
-    time: "5 Min",
-    price: "10 RON",
-  },
-  {
-    name: "Barbă Fade",
-    time: "15 Min",
-    price: "20 RON",
-  },
-  {
-    name: "Barbă",
+    name: "Spălat Capilar",
     time: "10 Min",
     price: "10 RON",
   },
   {
-    name: "Mustață",
-    time: "5 Min",
-    price: "5 RON",
+    name: "Tuns Barbă & Aranjat",
+    time: "15 Min",
+    price: "20 RON",
+  },
+  {
+    name: "Tuns Barbă Uniform",
+    time: "10 Min",
+    price: "10 RON",
+  },
+  {
+    name: "Vopsit Barbă",
+    time: "30 Min",
+    price: "30 RON",
   },
 ];
 const pricesCoafor = [
@@ -57,6 +47,11 @@ const pricesCoafor = [
     price: "140 RON",
   },
   {
+    name: "Tuns",
+    time: "45 Min",
+    price: "80 RON",
+  },
+  {
     name: "Spălat",
     time: "10 Min",
     price: "20 RON",
@@ -64,7 +59,7 @@ const pricesCoafor = [
   {
     name: "Coafat Drept",
     time: "30 Min",
-    price: "40 RON",
+    price: "50 RON",
   },
   {
     name: "Coafat Bucle",
@@ -79,57 +74,32 @@ const pricesCoafor = [
   {
     name: "Coafat Ocazie",
     time: "90 Min",
-    price: "150-250 RON",
+    price: "150 - 250 RON",
   },
   {
     name: "Coafat - Mireasă",
     time: "90 Min",
-    price: "250-500 RON",
-  },
-  {
-    name: "Vopsit Rădăcină",
-    time: "90 Min",
-    price: "200-300 RON",
+    price: "250 - 500 RON",
   },
   {
     name: "Vopsit Total",
     time: "120 Min",
-    price: "250-350 RON",
+    price: "250 - 400 RON",
   },
   {
     name: "Vopsit Suvițe",
     time: "180 Min",
-    price: "350-450 RON",
+    price: "400 - 700 RON",
   },
   {
     name: "Balayage",
-    time: "240-480 Min",
-    price: "500-900 RON",
+    time: "240 - 480 Min",
+    price: "700 - 1200 RON",
   },
   {
     name: "Decolorat",
-    time: "240-360 Min",
-    price: "500-700 RON",
-  },
-  {
-    name: "Decapaj",
-    time: "60 Min",
-    price: "150 RON",
-  },
-  {
-    name: "Coafat Extensii",
-    time: "60 Min",
-    price: "110 RON",
-  },
-  {
-    name: "Montat Extensii Bandă",
-    time: "90 Min",
-    price: "150 RON",
-  },
-  {
-    name: "Permanent (manopera)",
-    time: "120 Min",
-    price: "250-350 RON",
+    time: "240 - 360 Min",
+    price: "500 - 800 RON",
   },
 ];
 
