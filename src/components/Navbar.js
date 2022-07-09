@@ -6,15 +6,16 @@ import Menu from "./Menu";
 import "./Navbar.scss";
 
 const Navbar = ({ isDrawerOpen, openDrawer }) => (
-    <div className="navbar">
-      <div className="navbar-menu">
-        <Menu openDrawer={openDrawer} isDrawerOpen={isDrawerOpen} />
-      </div>
-      <div className="navbar-logo">
-        <Link to="/">
-          <img src={logo_white} alt="" />
-        </Link>
-      </div>
+  <div className="navbar">
+    <div className="navbar-menu">
+      <Menu openDrawer={openDrawer} isDrawerOpen={isDrawerOpen} />
     </div>
-  );
+
+    <div className="navbar-logo">
+      <Link to="/">
+        <img src={logo_white} alt="" />
+      </Link>
+    </div>
+  </div>
+);
 export default Navbar;

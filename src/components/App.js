@@ -18,27 +18,42 @@ const App = () => {
   return (
     <div className="App">
       <Suspense fallback={<div className="app-fallback">Loading...</div>}>
-        <Backdrop open={drawerOpen} close={() => setDrawerOpen(!drawerOpen)} />
+        {drawerOpen && (
+          <Backdrop
+            open={drawerOpen}
+            close={() => setDrawerOpen(!drawerOpen)}
+          />
+        )}
+
         <Navbar
           isDrawerOpen={drawerOpen}
           openDrawer={() => setDrawerOpen(!drawerOpen)}
         />
-        <Drawer
-          drawerIsOpen={drawerOpen}
-          close={() => setDrawerOpen(!drawerOpen)}
-        />
+
+        {drawerOpen && (
+          <Drawer
+            drawerIsOpen={drawerOpen}
+            close={() => setDrawerOpen(!drawerOpen)}
+          />
+        )}
+
         <Route path="/" exact component={Home} />
+
         <Route path="/maps" exact component={IndicatiiMaps} />
+
         <Route path="/despre" exact component={About} />
+
         <Route path="/lista-de-preturi" exact component={PriceList} />
+
         <Route
           path="/politica-de-confidentialitate"
           exact
           component={ConfidentialPolicy}
         />
+
         <Route path="/termeni-si-conditii" exact component={TermsConditions} />
       </Suspense>
     </div>
   );
-}
+};
 export default App;

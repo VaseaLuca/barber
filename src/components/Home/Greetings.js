@@ -14,14 +14,18 @@ const Gritings = () => {
       <div className="greetings-background">
         <img src={home_background} alt="home_background" />
       </div>
+
       <div className="greetings-hello">Bună!</div>
+
       <div className="greetings-underline-text">
         Fii în siguranță și arată minunat!
       </div>
+
       <div className="greetings-text">
         Vezi ce spun clienții noștri despre noi și programează o vizită. Găsește
         salonul pe hartă
       </div>
+      
       <div className="button-section">
         <Link to="/maps">
           <div

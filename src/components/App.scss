@@ -2,12 +2,15 @@
   display: flex;
   flex-direction: column;
 }
-.app-modal{
+
+.app-modal {
   position: fixed;
 }
-.app-fallback{
+
+.app-fallback {
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: calc(16px + 1.4vw);
+  padding-top: 300px;
 }

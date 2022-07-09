@@ -107,7 +107,7 @@ const priceManichiura = [
   {
     name: "Manichiură Clasică",
     time: "30 Min",
-    price: "40 RON",
+    price: "50 RON",
   },
   {
     name: "Pedichiură Clasică",
@@ -117,12 +117,12 @@ const priceManichiura = [
   {
     name: "Manichiură cu ojă Semipermanentă",
     time: "60 Min",
-    price: "80 RON",
+    price: "90 RON",
   },
   {
     name: "Pedichiură cu ojă Semipermanentă",
     time: "60 Min",
-    price: "90 RON",
+    price: "100 RON",
   },
   {
     name: "Îndepărtat Semipermanentă",

@@ -11,13 +11,16 @@ const Home = () => (
     <div className="home">
       <Suspense fallback={<div className="home-fallback">Loading...</div>}>
         <Greetings />
+
         <About
           title={"Despre Noi"}
           info={"Armonia perfectă între BarberShop & Coafor"}
           img={about_img}
           directory={"/despre"}
         />
+
         <ServicePrice />
+        
         <Footer />
       </Suspense>
     </div>

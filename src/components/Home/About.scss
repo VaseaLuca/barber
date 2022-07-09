@@ -4,40 +4,49 @@
   margin: 100px auto 100px auto;
   display: flex;
   transition: 0.2s ease-in-out;
+
   @include mediaMobilesTablets() {
     flex-direction: column-reverse;
   }
+
   @include mediaSmartphones() {
     flex-direction: column-reverse;
   }
+
   @include mediaSmallSmartphones() {
     flex-direction: column-reverse;
   }
 }
+
 .about-text-block {
   @include flex(column, none);
   flex-basis: 50%;
   margin: auto 10px;
   text-align: center;
+
   a {
     text-decoration: none;
     color: inherit;
   }
 }
-.about-text{
+
+.about-text {
   font-size: $headerTextSize;
   font-weight: $boldText;
   margin: 30px auto 20px auto;
 }
+
 .about-text-description {
   font-size: $descriptionTextSize;
   font-weight: $thinText;
   margin: 10px auto 30px auto;
 }
+
 .about-button {
   margin: 0 auto;
   @include homeBtn();
 }
+
 .about-img {
   img {
     width: 1100px;

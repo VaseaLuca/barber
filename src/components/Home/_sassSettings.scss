@@ -3,14 +3,17 @@
   flex-direction: $direction;
   justify-content: $justifyContent;
 }
+
 @mixin flexColumn {
   display: flex;
   flex-direction: column;
 }
+
 @mixin flexCenter {
   display: flex;
   justify-content: center;
 }
+
 @mixin homeBtn {
   border: $btnBorder;
   padding: $btnPadding;
@@ -19,12 +22,14 @@
   white-space: nowrap;
   display: inline-block;
   cursor: pointer;
+
   &:hover {
     background-color: black;
     color: #fff;
     transition: 0.2s ease-in-out;
   }
 }
+
 // Sass settings for the Home page buttons, header text size, description text size etc ...
 $headerTextSize: calc(16px + 1.4vw);
 $descriptionTextSize: calc(14px + 0.4vw);
@@ -40,11 +45,13 @@ $thinText: 500;
     @content;
   }
 }
+
 @mixin mediaLaptops {
   @media (min-width: 1025px) and (max-width: 1280px) {
     @content;
   }
 }
+
 @mixin mediaTabletsIpads {
   @media (min-width: 768px) and (max-width: 1024px) {
     @content;
@@ -62,11 +69,13 @@ $thinText: 500;
     @content;
   }
 }
+
 @mixin mediaSmartphones {
   @media (min-width: 320px) and (max-width: 480px) {
     @content;
   }
 }
+
 @mixin mediaSmartphones320px {
   @media (min-width: 320px) and (max-width: 321px) {
     @content;
@@ -76,5 +85,15 @@ $thinText: 500;
 @mixin mediaSmallSmartphones {
   @media (min-width: 280px) and (max-width: 319px) {
     @content;
+  }
+}
+
+@keyframes fade-up {
+  0% {
+    transform: translateY(100%);
+  }
+
+  100% {
+    transform: translatey(0);
   }
 }
