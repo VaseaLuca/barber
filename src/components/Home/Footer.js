@@ -93,13 +93,13 @@ const Footer = () => {
           Social:
           <div className="footer-column-fb">
             <a href="https://www.facebook.com/goldentimes.oficial/">
-              <img src={fb} alt="" />
+              <img src={fb} alt="facebook-logo" />
             </a>
           </div>
           
           <div className="footer-column-ig">
             <a href="https://www.instagram.com/goldentimes.oficial/">
-              <img src={ig} alt="" />
+              <img src={ig} alt="instagram-logo" />
             </a>
           </div>
         </div>

@@ -13,7 +13,7 @@ const Navbar = ({ isDrawerOpen, openDrawer }) => (
 
     <div className="navbar-logo">
       <Link to="/">
-        <img src={logo_white} alt="" />
+        <img src={logo_white} alt="logo" />
       </Link>
     </div>
   </div>
