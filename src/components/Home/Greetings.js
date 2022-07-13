@@ -44,7 +44,7 @@ const Gritings = () => {
         </Link>
 
         <a
-          href="https://stailer.ro/widget/golden-times"
+          href="https://rezervio.ro/locations/69/golden-times-salon"
           rel="noreferrer"
           target="_blank"
         >

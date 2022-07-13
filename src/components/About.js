@@ -43,7 +43,7 @@ const About = () => (
           <div className="redirect-button-red">Suna</div>
         </a>
         <a
-          href="https://stailer.ro/widget/golden-times"
+          href="https://rezervio.ro/locations/69/golden-times-salon"
           rel="noreferrer"
           target="_blank"
         >
