@@ -12,7 +12,7 @@ const AboutCard = ({ header, description, img, isReversed }) => (
         {description}
         <div className="about-description-social">
           Vezi lucrările noastre:
-          <a href="https://www.instagram.com/goldentimes.oficial/">
+          <a href="https://www.instagram.com/goldentimes_salon/">
             <img className="description-social-ig" src={ig} alt="ig" />
           </a>
           <a href="https://www.facebook.com/goldentimes.oficial?_rdc=1&_rdr/">

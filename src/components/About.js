@@ -37,20 +37,74 @@ const About = () => (
     />
     <div className="redirect-block">
       <div className="redirect-header">Dacă ți-am câștigat încrederea</div>
+
       <div className="redirect-content">Nu ezita să faci o programare</div>
+
       <div className="redirect-button-block">
         <a href="tel:0787222302">
           <div className="redirect-button-red">Suna</div>
         </a>
-        <a
-          href="https://rezervio.ro/locations/69/golden-times-salon"
-          rel="noreferrer"
-          target="_blank"
-        >
-          <div className="redirect-button-red">Programează-te Online</div>
-        </a>
       </div>
+
       <div className="redirect-description">De restul ne ocupăm noi</div>
+
+      <div className="programari">
+        <h3>Programari Online</h3>
+
+        <div className="staff-block">
+          <div className="group">
+            <div className="staff-item">
+              <p>Octavian: Frizer</p>
+
+              <a
+                href="https:/rezervio.ro/locations/69/golden-times-salon"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <div className="greetings-button-red">Programeză-te</div>
+              </a>
+            </div>
+
+            <div className="staff-item">
+              <p>Mădălina: Coafor</p>
+
+              <a
+                href="https:/rezervio.ro/locations/69/golden-times-salon"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <div className="greetings-button-red">Programeză-te</div>
+              </a>
+            </div>
+          </div>
+
+          <div className="group">
+            <div className="staff-item">
+              <p>Dana Maria: Frizer</p>
+
+              <a
+                href="https://stailer.ro/widget/golden-times/xjzxxcjh"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <div className="greetings-button-red">Programeză-te</div>
+              </a>
+            </div>
+
+            <div className="staff-item">
+              <p>Roxana: Mani - Pedi</p>
+
+              <a
+                href="https://stailer.ro/widget/golden-times/xbursolp"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <div className="greetings-button-red">Programeză-te</div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <Footer />

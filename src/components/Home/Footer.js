@@ -98,7 +98,7 @@ const Footer = () => {
           </div>
           
           <div className="footer-column-ig">
-            <a href="https://www.instagram.com/goldentimes.oficial/">
+            <a href="https://www.instagram.com/goldentimes_salon/">
               <img src={ig} alt="instagram-logo" />
             </a>
           </div>

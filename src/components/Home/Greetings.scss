@@ -9,6 +9,52 @@
     color: inherit;
     text-align: center;
   }
+
+  .programari {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px 0;
+
+    h3 {
+      font-size: $headerTextSize;
+      text-align: center;
+      margin-bottom: 0;
+    }
+
+    .staff-block {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0 10px;
+
+      .group {
+        display: flex;
+
+        @media (max-width: 400px) {
+          flex-direction: column;
+        }
+
+        .staff-item {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          padding: 0 10px;
+
+          &>* {
+            align-self: center;
+          }
+
+          p {
+            max-width: 250px;
+            width: 100%;
+            font-size: $descriptionTextSize;
+            white-space: nowrap;
+          }
+        }
+      }
+    }
+  }
 }
 
 .greetings-background img {
@@ -62,16 +108,17 @@
 
 .greetings-button-red {
   @include homeBtn();
-  margin: 0 auto 20px 10px;
+
   border-color: #f60000;
   color: #f60000;
 
   @include mediaSmartphones() {
-    margin: 0 auto 20px auto;
+    // margin: 0 auto 20px auto;
+    // margin: 0 auto 20px 10px;
   }
 
   @include mediaSmallSmartphones() {
-    margin: 0 auto 20px auto;
+    // margin: 0 auto 20px auto;
   }
 
   &:hover {
