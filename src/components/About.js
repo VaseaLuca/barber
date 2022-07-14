@@ -57,7 +57,7 @@ const About = () => (
               <p>Octavian: Frizer</p>
 
               <a
-                href="https:/rezervio.ro/locations/69/golden-times-salon"
+                href="https://rezervio.ro/locations/69/golden-times-salon"
                 rel="noreferrer"
                 target="_blank"
               >
@@ -66,10 +66,10 @@ const About = () => (
             </div>
 
             <div className="staff-item">
-              <p>Mădălina: Coafor</p>
+              <p>Dana Maria: Frizer</p>
 
               <a
-                href="https:/rezervio.ro/locations/69/golden-times-salon"
+                href="https://stailer.ro/widget/golden-times/xjzxxcjh"
                 rel="noreferrer"
                 target="_blank"
               >
@@ -80,10 +80,10 @@ const About = () => (
 
           <div className="group">
             <div className="staff-item">
-              <p>Dana Maria: Frizer</p>
+              <p>Mădălina: Coafor</p>
 
               <a
-                href="https://stailer.ro/widget/golden-times/xjzxxcjh"
+                href="https://rezervio.ro/locations/69/golden-times-salon"
                 rel="noreferrer"
                 target="_blank"
               >

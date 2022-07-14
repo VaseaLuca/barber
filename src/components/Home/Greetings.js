@@ -52,7 +52,7 @@ const Gritings = () => {
               <p>Octavian: Frizer</p>
 
               <a
-                href="https:/rezervio.ro/locations/69/golden-times-salon"
+                href="https://rezervio.ro/locations/69/golden-times-salon"
                 rel="noreferrer"
                 target="_blank"
               >
@@ -61,10 +61,8 @@ const Gritings = () => {
             </div>
 
             <div className="staff-item">
-              <p>Mădălina: Coafor</p>
-
               <a
-                href="https:/rezervio.ro/locations/69/golden-times-salon"
+                href="https://stailer.ro/widget/golden-times/xjzxxcjh"
                 rel="noreferrer"
                 target="_blank"
               >
@@ -75,15 +73,16 @@ const Gritings = () => {
 
           <div className="group">
             <div className="staff-item">
-              <p>Dana Maria: Frizer</p>
+              <p>Mădălina: Coafor</p>
 
               <a
-                href="https://stailer.ro/widget/golden-times/xjzxxcjh"
-                rel="noreferrer"
+                href="https://rezervio.ro/locations/69/golden-times-salon"
+                rel="noreferrer noopener"
                 target="_blank"
               >
                 <div className="greetings-button-red">Programeză-te</div>
               </a>
+              <p>Dana Maria: Frizer</p>
             </div>
 
             <div className="staff-item">
