@@ -61,8 +61,10 @@ const Gritings = () => {
             </div>
 
             <div className="staff-item">
+              <p>Dana Maria: Frizer</p>
+
               <a
-                href="https://stailer.ro/widget/golden-times/xjzxxcjh"
+                href="https://rezervio.ro/locations/69/golden-times-salon"
                 rel="noreferrer"
                 target="_blank"
               >
@@ -82,14 +84,13 @@ const Gritings = () => {
               >
                 <div className="greetings-button-red">Programeză-te</div>
               </a>
-              <p>Dana Maria: Frizer</p>
             </div>
 
             <div className="staff-item">
               <p>Roxana: Mani - Pedi</p>
 
               <a
-                href="https://stailer.ro/widget/golden-times/xbursolp"
+                href="https://rezervio.ro/locations/69/golden-times-salon"
                 rel="noreferrer"
                 target="_blank"
               >

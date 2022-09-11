@@ -69,7 +69,7 @@ const About = () => (
               <p>Dana Maria: Frizer</p>
 
               <a
-                href="https://stailer.ro/widget/golden-times/xjzxxcjh"
+                href="https://rezervio.ro/locations/69/golden-times-salon"
                 rel="noreferrer"
                 target="_blank"
               >
@@ -95,7 +95,7 @@ const About = () => (
               <p>Roxana: Mani - Pedi</p>
 
               <a
-                href="https://stailer.ro/widget/golden-times/xbursolp"
+                href="https://rezervio.ro/locations/69/golden-times-salon"
                 rel="noreferrer"
                 target="_blank"
               >
