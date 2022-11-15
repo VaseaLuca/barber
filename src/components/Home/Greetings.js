@@ -43,57 +43,50 @@ const Gritings = () => {
         </Link>
       </div>
 
-      <div className="programari">
+      <div class="programari">
         <h3>Programari Online</h3>
-
-        <div className="staff-block">
-          <div className="group">
-            <div className="staff-item">
+        <div class="staff-block">
+          <div class="group">
+            <div class="staff-item">
               <p>Octavian: Frizer</p>
-
               <a
                 href="https://rezervio.ro/locations/69/golden-times-salon"
                 rel="noreferrer"
                 target="_blank"
               >
-                <div className="greetings-button-red">Programeză-te</div>
+                <div class="greetings-button-red">Programeză-te</div>
               </a>
             </div>
-
-            <div className="staff-item">
+            <div class="staff-item">
+              <p>Dana Maria: Frizer</p>
               <a
-                href="https://stailer.ro/widget/golden-times/xjzxxcjh"
+                href="https://rezervio.ro/locations/69/golden-times-salon"
                 rel="noreferrer"
                 target="_blank"
               >
-                <div className="greetings-button-red">Programeză-te</div>
+                <div class="greetings-button-red">Programeză-te</div>
               </a>
             </div>
           </div>
-
-          <div className="group">
-            <div className="staff-item">
+          <div class="group">
+            <div class="staff-item">
               <p>Mădălina: Coafor</p>
-
               <a
                 href="https://rezervio.ro/locations/69/golden-times-salon"
                 rel="noreferrer noopener"
                 target="_blank"
               >
-                <div className="greetings-button-red">Programeză-te</div>
+                <div class="greetings-button-red">Programeză-te</div>
               </a>
-              <p>Dana Maria: Frizer</p>
             </div>
-
-            <div className="staff-item">
+            <div class="staff-item">
               <p>Roxana: Mani - Pedi</p>
-
               <a
-                href="https://stailer.ro/widget/golden-times/xbursolp"
+                href="https://rezervio.ro/locations/69/golden-times-salon"
                 rel="noreferrer"
                 target="_blank"
               >
-                <div className="greetings-button-red">Programeză-te</div>
+                <div class="greetings-button-red">Programeză-te</div>
               </a>
             </div>
           </div>
@@ -101,5 +94,5 @@ const Gritings = () => {
       </div>
     </div>
   );
-}
+};
 export default Gritings;
