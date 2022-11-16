@@ -105,8 +105,8 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div class="footer-row">
-        <div class="footer-column-anpc">
+      <div className="footer-row">
+        <div className="footer-column-anpc">
           <p>ANPC:</p>
           <a target="_blank" href="https://anpc.ro/ce-este-sal/">
             <img src={sal} alt="sal" />
