@@ -45,12 +45,10 @@ const Gritings = () => {
 
       <div className="programari">
         <h3>Programari Online</h3>
-
         <div className="staff-block">
           <div className="group">
             <div className="staff-item">
               <p>Octavian: Frizer</p>
-
               <a
                 href="https://rezervio.ro/locations/69/golden-times-salon"
                 rel="noreferrer"
@@ -59,10 +57,8 @@ const Gritings = () => {
                 <div className="greetings-button-red">Programeză-te</div>
               </a>
             </div>
-
             <div className="staff-item">
               <p>Dana Maria: Frizer</p>
-
               <a
                 href="https://rezervio.ro/locations/69/golden-times-salon"
                 rel="noreferrer"
@@ -72,11 +68,9 @@ const Gritings = () => {
               </a>
             </div>
           </div>
-
           <div className="group">
             <div className="staff-item">
               <p>Mădălina: Coafor</p>
-
               <a
                 href="https://rezervio.ro/locations/69/golden-times-salon"
                 rel="noreferrer noopener"
@@ -85,10 +79,8 @@ const Gritings = () => {
                 <div className="greetings-button-red">Programeză-te</div>
               </a>
             </div>
-
             <div className="staff-item">
               <p>Roxana: Mani - Pedi</p>
-
               <a
                 href="https://rezervio.ro/locations/69/golden-times-salon"
                 rel="noreferrer"
@@ -102,5 +94,5 @@ const Gritings = () => {
       </div>
     </div>
   );
-}
+};
 export default Gritings;
