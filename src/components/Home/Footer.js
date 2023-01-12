@@ -105,15 +105,18 @@ const Footer = () => {
           </div>
         </div>
       </div>
+      
       <div className="footer-row">
         <div className="footer-column-anpc">
           <p>ANPC:</p>
-          <a target="_blank" href="https://anpc.ro/ce-este-sal/">
+
+          <a target="_blank" rel="noreferrer" href="https://anpc.ro/ce-este-sal/">
             <img src={sal} alt="sal" />
           </a>
           &nbsp;&nbsp;&nbsp;&nbsp;
           <a
             target="_blank"
+            rel="noreferrer"
             href="https://ec.europa.eu/consumers/odr/main/index.cfm?event=main.home2.show&lng=RO"
           >
             <img src={sol} alt="sol" />
