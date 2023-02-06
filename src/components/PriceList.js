@@ -64,7 +64,7 @@ const pricesCoafor = [
   {
     name: "Coafat Bucle",
     time: "40 Min",
-    price: "60 RON",
+    price: "80 RON",
   },
   {
     name: "Coafat - Păr Scurt",
