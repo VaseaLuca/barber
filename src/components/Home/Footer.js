@@ -22,7 +22,7 @@ const Footer = () => {
     (weekDay) => {
       switch (weekDay) {
         case weekDay === 1:
-          if (date.getHours() >= 9 && date.getHours() < 15) {
+          if (date.getHours() >= 9 && date.getHours() < 17) {
             return <div className="footer-green-circle" />;
           }
           break;
@@ -78,7 +78,7 @@ const Footer = () => {
       <div className="footer-row">
         <div className="footer-column-holiday"></div>
         <div className="footer-column-none">
-          Luni: 10:00 - 15:00
+          Luni: 10:00 - 17:00
           {_checkHour(date.getDay())}
         </div>
 
