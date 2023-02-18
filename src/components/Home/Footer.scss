@@ -26,7 +26,7 @@
   margin: auto 30px;
 
   @include mediaTabletsIpads() {
-    margin: auto 16px;
+    margin: auto 10px;
   }
 
   @include mediaMobilesTablets() {
@@ -34,7 +34,7 @@
   }
 
   @include mediaSmartphones() {
-    margin: 30px 60px;
+    margin: 30px auto;
   }
 
   @include mediaSmartphones320px () {

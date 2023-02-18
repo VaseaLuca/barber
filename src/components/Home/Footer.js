@@ -18,28 +18,36 @@ const Footer = () => {
     };
   }, [date]);
 
-  const checkHour = React.useMemo(() => {
-    if (
-      ![1, 6, 7].includes(date.getDay()) &&
-      date.getHours() >= 10 &&
-      date.getHours() < 18
-    ) {
-      return <div className="footer-green-circle" />;
-    }
-    return <div className="footer-red-circle" />;
-  }, [date]);
-
-  const checkHourWeekend = React.useMemo(() => {
-    if (
-      date.getDay() === 6 &&
-      date.getDay() !== 7 &&
-      date.getHours() >= 10 &&
-      date.getHours() < 16
-    ) {
-      return <div className="footer-green-circle" />;
-    }
-    return <div className="footer-red-circle" />;
-  }, [date]);
+  const _checkHour = React.useCallback(
+    (weekDay) => {
+      switch (weekDay) {
+        case weekDay === 1:
+          if (date.getHours() >= 9 && date.getHours() < 15) {
+            return <div className="footer-green-circle" />;
+          }
+          break;
+        case [2, 3, 4, 5].includes(weekDay):
+          if (date.getHours() >= 10 && date.getHours() < 18) {
+            return <div className="footer-green-circle" />;
+          }
+          break;
+        case weekDay === 6:
+          if (date.getHours() >= 9 && date.getHours() < 14) {
+            console.log(weekDay)
+            return <div className="footer-green-circle" />;
+          }
+          break;
+        default:
+          <div className="footer-red-circle" />;
+          break;
+      }
+      if (![1, 6, 7].includes(date.getDay()) && date.getHours() >= 10 && date.getHours() < 18) {
+        return <div className="footer-green-circle" />;
+      }
+      return <div className="footer-red-circle" />;
+    },
+    [date]
+  );
 
   return (
     <div className="footer">
@@ -59,9 +67,7 @@ const Footer = () => {
 
       <div className="footer-row">
         <div className="footer-column">
-          <Link to="/politica-de-confidentialitate">
-            Politică de confidențialitate
-          </Link>
+          <Link to="/politica-de-confidentialitate">Politică de confidențialitate</Link>
         </div>
 
         <div className="footer-column">
@@ -72,17 +78,22 @@ const Footer = () => {
       <div className="footer-row">
         <div className="footer-column-holiday"></div>
         <div className="footer-column-none">
-          Marți - Vineri: 10:00 - 18:00
-          {checkHour}
+          Luni: 10:00 - 15:00
+          {_checkHour(date.getDay())}
         </div>
 
         <div className="footer-column-none">
-          Sâmbătă: 10:00 - 16:00
-          {checkHourWeekend}
+          Marți - Vineri: 9:00 - 18:00
+          {_checkHour(date.getDay())}
+        </div>
+
+        <div className="footer-column-none">
+          Sâmbătă: 9:00 - 14:00
+          {_checkHour(date.getDay())}
         </div>
 
         <div className="footer-column-holiday">
-          <div className="footer-column-none">Duminică - Luni : </div>
+          <div className="footer-column-none">Duminică: </div>
 
           <div className="footer-column-close">Închis</div>
         </div>
@@ -105,11 +116,10 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      
+
       <div className="footer-row">
         <div className="footer-column-anpc">
           <p>ANPC:</p>
-
           <a target="_blank" rel="noreferrer" href="https://anpc.ro/ce-este-sal/">
             <img src={sal} alt="sal" />
           </a>
