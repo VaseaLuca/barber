@@ -5,133 +5,114 @@ import "./PriceList.scss";
 
 const pricesFrizerie = [
   {
+    name: "Tuns Clasic",
+    spacer: "......................",
+    price: "60 RON",
+  },
+  {
     name: "Tuns Fade",
-    time: "60 Min",
-    price: "60 RON",
+    spacer: "......................",
+    price: "70 RON",
   },
   {
-    name: "Tuns Clasic & Aranjat",
-    time: "60 Min",
-    price: "60 RON",
+    name: "Tuns din Foarfecă",
+    spacer: "......................",
+    price: "70 RON",
   },
   {
-    name: "Tuns Zero",
-    time: "30 Min",
+    name: "Pachet tuns și Barbă",
+    spacer: "......................",
+    price: "80 RON",
+  },
+  {
+    name: "Tuns Barbă",
+    spacer: "......................",
     price: "30 RON",
   },
   {
-    name: "Spălat Capilar",
-    time: "10 Min",
+    name: "Spălat",
+    spacer: "......................",
     price: "10 RON",
   },
-  {
-    name: "Tuns Barbă & Aranjat",
-    time: "15 Min",
-    price: "20 RON",
-  },
-  {
-    name: "Tuns Barbă Uniform",
-    time: "10 Min",
-    price: "10 RON",
-  },
-  {
-    name: "Vopsit Barbă",
-    time: "30 Min",
-    price: "30 RON",
-  },
+
 ];
 const pricesCoafor = [
   {
     name: "Pachet Tuns",
-    time: "60 Min",
-    price: "140 RON",
-  },
-  {
-    name: "Tuns",
-    time: "45 Min",
-    price: "80 RON",
-  },
-  {
-    name: "Spălat",
-    time: "10 Min",
-    price: "20 RON",
-  },
-  {
-    name: "Coafat Drept",
-    time: "30 Min",
-    price: "50 RON",
-  },
-  {
-    name: "Coafat Bucle",
-    time: "40 Min",
-    price: "80 RON",
+    spacer: "......................",
+    price: "150 RON",
   },
   {
     name: "Coafat - Păr Scurt",
-    time: "20 Min",
-    price: "40 RON",
+    spacer: "......................",
+    price: "70 RON",
+  },
+  {
+    name: "Coafat Drept",
+    spacer: "......................",
+    price: "80 RON",
   },
   {
     name: "Coafat Ocazie",
-    time: "90 Min",
-    price: "150 - 250 RON",
+    spacer: "......................",
+    price: "250 RON",
   },
   {
     name: "Coafat - Mireasă",
-    time: "90 Min",
+    spacer: "......................",
     price: "250 - 500 RON",
   },
   {
     name: "Vopsit Total",
-    time: "120 Min",
+    spacer: "......................",
     price: "250 - 400 RON",
   },
   {
     name: "Vopsit Suvițe",
-    time: "180 Min",
+    spacer: "......................",
     price: "400 - 700 RON",
   },
   {
-    name: "Balayage",
-    time: "240 - 480 Min",
-    price: "700 - 1200 RON",
+    name: "Decolorat",
+    spacer: "......................",
+    price: "500 - 800 RON",
   },
   {
-    name: "Decolorat",
-    time: "240 - 360 Min",
-    price: "500 - 800 RON",
+    name: "Balayage",
+    spacer: "......................",
+    price: "800 - 1200 RON",
   },
 ];
 
 const priceManichiura = [
   {
     name: "Manichiură Clasică",
-    time: "30 Min",
+    spacer: "......................",
     price: "50 RON",
   },
   {
     name: "Pedichiură Clasică",
-    time: "45 Min",
+    spacer: "......................",
     price: "60 RON",
   },
   {
     name: "Manichiură cu ojă Semipermanentă",
-    time: "60 Min",
+    spacer: "......................",
     price: "90 RON",
   },
   {
     name: "Pedichiură cu ojă Semipermanentă",
-    time: "60 Min",
+    spacer: "......................",
     price: "100 RON",
   },
   {
     name: "Îndepărtat Semipermanentă",
-    time: "10 Min",
+    spacer: "......................",
     price: "20 RON",
   },
   {
     name: "Îndepărtat Gel",
-    time: "15 Min",
+    spacer: "......................",
     price: "30 RON",
   },
 ];
@@ -146,7 +127,7 @@ const PriceList = () => {
           {pricesFrizerie.map((price) => (
             <tr key={price.name}>
               <td>{price.name}</td>
-              <td>{price.time}</td>
+              <td>{price.spacer}</td>
               <td>{price.price}</td>
             </tr>
           ))}
@@ -159,7 +140,7 @@ const PriceList = () => {
           {pricesCoafor.map((price) => (
             <tr key={price.name}>
               <td>{price.name}</td>
-              <td>{price.time}</td>
+              <td>{price.spacer}</td>
               <td>{price.price}</td>
             </tr>
           ))}
@@ -172,7 +153,7 @@ const PriceList = () => {
           {priceManichiura.map((price) => (
             <tr key={price.name}>
               <td>{price.name}</td>
-              <td>{price.time}</td>
+              <td>{price.spacer}</td>
               <td>{price.price}</td>
             </tr>
           ))}
