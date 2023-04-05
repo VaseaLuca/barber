@@ -53,6 +53,11 @@ const pricesCoafor = [
     price: "80 RON",
   },
   {
+    name: "Coafat Bucle",
+    spacer: "......................",
+    price: "100 RON",
+  },
+  {
     name: "Coafat Ocazie",
     spacer: "......................",
     price: "250 RON",
