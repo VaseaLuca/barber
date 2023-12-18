@@ -7,22 +7,22 @@ const pricesFrizerie = [
   {
     name: "Tuns Clasic",
     spacer: "......................",
-    price: "60 RON",
+    price: "70 RON",
   },
   {
     name: "Tuns Fade",
     spacer: "......................",
-    price: "70 RON",
+    price: "80 RON",
   },
   {
     name: "Tuns din Foarfecă",
     spacer: "......................",
-    price: "70 RON",
+    price: "80 RON",
   },
   {
     name: "Pachet tuns și Barbă",
     spacer: "......................",
-    price: "80 RON",
+    price: "90 RON",
   },
   {
     name: "Tuns Barbă",
@@ -34,7 +34,6 @@ const pricesFrizerie = [
     spacer: "......................",
     price: "10 RON",
   },
-
 ];
 const pricesCoafor = [
   {
@@ -51,6 +50,11 @@ const pricesCoafor = [
     name: "Coafat Drept",
     spacer: "......................",
     price: "80 RON",
+  },
+  {
+    name: "Coafat Bucle",
+    spacer: "......................",
+    price: "100 RON",
   },
   {
     name: "Coafat Ocazie",
