@@ -92,32 +92,32 @@ const priceManichiura = [
   {
     name: "Manichiură Clasică",
     spacer: "......................",
-    price: "50 RON",
+    price: "60 RON",
   },
   {
     name: "Pedichiură Clasică",
     spacer: "......................",
-    price: "60 RON",
+    price: "70 RON",
   },
   {
     name: "Manichiură cu ojă Semipermanentă",
     spacer: "......................",
-    price: "90 RON",
+    price: "100 RON",
   },
   {
     name: "Pedichiură cu ojă Semipermanentă",
     spacer: "......................",
-    price: "100 RON",
+    price: "110 RON",
   },
   {
     name: "Îndepărtat Semipermanentă",
     spacer: "......................",
-    price: "20 RON",
+    price: "30 RON",
   },
   {
     name: "Îndepărtat Gel",
     spacer: "......................",
-    price: "30 RON",
+    price: "40 RON",
   },
 ];
 
