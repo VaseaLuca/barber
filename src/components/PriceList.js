@@ -79,12 +79,12 @@ const pricesCoafor = [
   {
     name: "Decolorat",
     spacer: "......................",
-    price: "500 - 800 RON",
+    price: "600 - 900 RON",
   },
   {
     name: "Balayage",
     spacer: "......................",
-    price: "800 - 1200 RON",
+    price: "1000 - 1600 RON",
   },
 ];
 
