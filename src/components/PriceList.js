@@ -44,7 +44,7 @@ const pricesCoafor = [
   {
     name: "Coafat - Păr Scurt",
     spacer: "......................",
-    price: "70 RON",
+    price: "80 RON",
   },
   {
     name: "Coafat Drept",
@@ -54,7 +54,7 @@ const pricesCoafor = [
   {
     name: "Coafat Bucle",
     spacer: "......................",
-    price: "100 RON",
+    price: "120 RON",
   },
   {
     name: "Coafat Ocazie",
@@ -69,7 +69,7 @@ const pricesCoafor = [
   {
     name: "Vopsit Total",
     spacer: "......................",
-    price: "250 - 400 RON",
+    price: "300 - 450 RON",
   },
   {
     name: "Vopsit Suvițe",
@@ -84,7 +84,7 @@ const pricesCoafor = [
   {
     name: "Balayage",
     spacer: "......................",
-    price: "1000 - 1600 RON",
+    price: "1000 - 1700 RON",
   },
 ];
 
@@ -102,12 +102,12 @@ const priceManichiura = [
   {
     name: "Manichiură cu ojă Semipermanentă",
     spacer: "......................",
-    price: "100 RON",
+    price: "120 RON",
   },
   {
     name: "Pedichiură cu ojă Semipermanentă",
     spacer: "......................",
-    price: "110 RON",
+    price: "130 RON",
   },
   {
     name: "Îndepărtat Semipermanentă",
