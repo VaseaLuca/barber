@@ -88,39 +88,39 @@ const pricesCoafor = [
   },
 ];
 
-const priceManichiura = [
-  {
-    name: "Manichiură Clasică",
-    spacer: "......................",
-    price: "60 RON",
-  },
-  {
-    name: "Pedichiură Clasică",
-    spacer: "......................",
-    price: "70 RON",
-  },
-  {
-    name: "Manichiură cu ojă Semipermanentă",
-    spacer: "......................",
-    price: "120 RON",
-  },
-  {
-    name: "Pedichiură cu ojă Semipermanentă",
-    spacer: "......................",
-    price: "130 RON",
-  },
-  {
-    name: "Îndepărtat Semipermanentă",
-    spacer: "......................",
-    price: "30 RON",
-  },
-  {
-    name: "Îndepărtat Gel",
-    spacer: "......................",
-    price: "40 RON",
-  },
-];
-
+// const priceManichiura = [
+//   {
+//     name: "Manichiură Clasică",
+//     spacer: "......................",
+//     price: "60 RON",
+//   },
+//   {
+//     name: "Pedichiură Clasică",
+//     spacer: "......................",
+//     price: "70 RON",
+//   },
+//   {
+//     name: "Manichiură cu ojă Semipermanentă",
+//     spacer: "......................",
+//     price: "120 RON",
+//   },
+//   {
+//     name: "Pedichiură cu ojă Semipermanentă",
+//     spacer: "......................",
+//     price: "130 RON",
+//   },
+//   {
+//     name: "Îndepărtat Semipermanentă",
+//     spacer: "......................",
+//     price: "30 RON",
+//   },
+//   {
+//     name: "Îndepărtat Gel",
+//     spacer: "......................",
+//     price: "40 RON",
+//   },
+// ];
+// test
 const PriceList = () => {
   return (
     <div className="price-list">
@@ -151,7 +151,7 @@ const PriceList = () => {
         </tbody>
       </table>
 
-      <div className="price-name">Manichiură & Pedichiură</div>
+      {/* <div className="price-name">Manichiură & Pedichiură</div>
       <table>
         <tbody>
           {priceManichiura.map((price) => (
@@ -162,7 +162,7 @@ const PriceList = () => {
             </tr>
           ))}
         </tbody>
-      </table>
+      </table> */}
       <Footer />
     </div>
   );
